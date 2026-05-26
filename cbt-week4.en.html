@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology Week 4: CBT — Can Changing Thoughts Really Change Your Life?</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item b{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice b{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.tool-link{display:inline-block;background:#e8d8e8;color:#7a3e8c;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
+.tool-link:hover{background:#d8b8d8}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.triangle-wrap{display:flex;justify-content:center;padding:10px 0}
+.triangle{position:relative;width:300px;height:260px}
+.tri-node{position:absolute;width:104px;height:104px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:700;text-align:center;box-shadow:0 4px 12px rgba(122,62,140,0.25)}
+.tri-node .lbl{font-size:0.68rem;letter-spacing:1.5px;opacity:0.9}
+.tri-node .nm{font-size:0.98rem;margin-top:2px}
+.tri-node .ex{font-size:0.68rem;margin-top:4px;font-weight:400;opacity:0.92;line-height:1.3;padding:0 6px}
+.tn-thought{top:0;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#7a3e8c,#a85aa8)}
+.tn-emotion{bottom:0;left:0;background:linear-gradient(135deg,#c84a78,#e07088)}
+.tn-behavior{bottom:0;right:0;background:linear-gradient(135deg,#5a8aa8,#7aa8c8)}
+.tri-arrow{position:absolute;color:#a85aa8;font-size:1.4rem;font-weight:700}
+.ar-1{top:90px;left:60px;transform:rotate(60deg)}
+.ar-2{top:90px;right:60px;transform:rotate(-60deg)}
+.ar-3{bottom:30px;left:50%;transform:translateX(-50%)}
+.distort-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.dist-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.88rem;border-top:3px solid #a85aa8}
+.dist-item b{display:block;color:#7a3e8c;font-size:0.92rem;margin-bottom:4px}
+.dist-item .ex-line{color:#7a5a7a;font-style:italic;font-size:0.82rem;margin-top:4px;display:block}
+.thought-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:0.84rem}
+.thought-table th{background:#7a3e8c;color:#fff;padding:8px 6px;text-align:left;font-size:0.78rem;letter-spacing:0.5px}
+.thought-table td{padding:10px 8px;border-bottom:1px solid #ead8ea;background:#fff;vertical-align:top}
+.thought-table tr:nth-child(even) td{background:#fbf3fb}
+.thought-table .col-h{background:#5a2e6c;color:#fff;font-weight:700}
+.waves{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}
+.wave{padding:14px 16px;border-radius:10px;color:#fff}
+.wave .w-lbl{font-size:0.72rem;letter-spacing:2px;opacity:0.88;font-weight:700}
+.wave .w-name{font-size:1.02rem;font-weight:700;margin-top:2px}
+.wave .w-desc{font-size:0.86rem;margin-top:6px;opacity:0.95;line-height:1.55}
+.w1{background:linear-gradient(135deg,#7a5a3a,#9a7a5a)}
+.w2{background:linear-gradient(135deg,#5a7090,#7a90b0)}
+.w3{background:linear-gradient(135deg,#5a9070,#7ab090)}
+.socratic{background:#f8f0f8;border-radius:10px;padding:14px 18px;margin-top:10px;font-size:0.92rem}
+.socratic ol{margin-left:20px;margin-top:6px}
+.socratic li{margin-bottom:6px;color:#3a2a3a}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.distort-grid{grid-template-columns:1fr}.thought-table{font-size:0.76rem}.thought-table th,.thought-table td{padding:6px 4px}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">WEEK 04 · CLINICAL PSYCHOLOGY / COGNITIVE SCIENCE</div>
+<h1>CBT: Can Changing Thoughts Really Change Your Life?</h1>
+<div class="meta">2026.06.09 · BigCat's Inner World</div>
+<div class="intro">CBT is the most studied, best-evidenced psychotherapy of the last 60 years — effective for depression, anxiety, insomnia, PTSD, and chronic pain. But it's also badly misread: "change your thoughts, change everything" makes CBT sound shallow. Real CBT isn't "positive-thinking substitution" — it's <b>scientist-style self-interrogation</b>: treat the automatic verdicts in your head as hypotheses, look for evidence, and rewrite when warranted. This week we open up its core mechanism, the 10 cognitive distortions, the thought record, and why "third-wave" CBT (ACT/MBCT) is a complement, not a replacement.</div>
+</header>
+
+<!-- Concept 1: Cognitive triangle -->
+<div class="card">
+<h2>The Cognitive Triangle: Thought ↔ Emotion ↔ Behavior<span class="en">The Cognitive Triangle — Beck's Revolution</span></h2>
+<span class="tag">theoretical foundation · clinical psychology</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>What hurts when something happens is <b>never the event itself, but your interpretation of it</b>. This is CBT's basic axiom (from the Stoic Epictetus, rediscovered by Aaron Beck in the 1960s through modern psychology). A colleague hasn't replied to your message — you might read it as "they're busy" (no emotional spike), or as "they're angry" (anxiety + shame + compulsive phone-checking). <b>Interpretation drives emotion, emotion drives behavior, and behavior reinforces the interpretation</b> — that's the cognitive triangle. Every CBT technique rests on "break one link in this loop".</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>Aaron Beck (1921-2021) was originally a psychoanalyst; while treating depressed patients in the 1960s, he noticed that they kept producing fast, negative, unnoticed thoughts he called <b>"automatic thoughts"</b>. From this came <i>Cognitive Therapy of Depression</i> (1979), which rapidly spread because its effects were measurable. Combined with Albert Ellis's REBT (Rational Emotive Behavior Therapy), it became modern CBT. Over <b>2,500 randomized controlled trials</b> support its effectiveness for depression, anxiety, insomnia, and more (Hofmann et al., 2012 meta-analysis) — it is the most evidence-based psychotherapy today. Judith Beck (his daughter) carries on the work; <i>Cognitive Behavior Therapy: Basics and Beyond</i> (2020) is the current standard textbook.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The Cognitive Triangle</div>
+<div class="triangle-wrap">
+<div class="triangle">
+<div class="tri-node tn-thought"><div class="lbl">THOUGHT</div><div class="nm">thought</div><div class="ex">"they're angry"</div></div>
+<div class="tri-node tn-emotion"><div class="lbl">EMOTION</div><div class="nm">emotion</div><div class="ex">anxiety · shame</div></div>
+<div class="tri-node tn-behavior"><div class="lbl">BEHAVIOR</div><div class="nm">behavior</div><div class="ex">check phone · avoid</div></div>
+<div class="tri-arrow ar-1">↘</div>
+<div class="tri-arrow ar-2">↙</div>
+<div class="tri-arrow ar-3">↔</div>
+</div>
+</div>
+<p style="text-align:center;font-size:0.84rem;color:#7a5a7a;margin-top:6px">The three vertices are mutually causal. CBT's intervention point: pulling on any link moves the whole system.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Below the cognitive triangle sits a deeper hierarchy: <b>core beliefs</b> ("I'm unlovable") → <b>intermediate beliefs / rules</b> ("if I'm perfect, people will accept me") → <b>automatic thoughts</b> ("that thing I just said — they probably hate me") → emotion and behavior. Beginner CBT works mainly at the automatic-thought layer; expert clinical work reaches the core beliefs (the direction Jeffrey Young expanded into schema therapy). <b>Behavior</b> matters more than people expect: avoidance is the engine of anxiety — the more you avoid, the larger the fear grows, because anxiety is reinforced by "not being disconfirmed". That's why purely changing thoughts isn't enough — behavioral experiments must come with it.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>The next time emotion spikes, ask "what thought just flashed through?" Pulling it from background to foreground already loosens the triangle.</div>
+<div class="role-item"><b>Parenting</b>Your child says "I'm bad at math" — don't rush to deny it. Ask "what sentence popped into your head?" Teaching them to spot automatic thoughts is ten times more useful than "instilling confidence".</div>
+<div class="role-item"><b>Partner</b>In conflict, neither of you is stating "facts" — both are stating interpretations. Restart with "my reading is X, your reading is Y, the fact might be Z".</div>
+<div class="role-item"><b>Team</b>When a report's performance slips, ask "how are you reading this?" — often unearths a distortion. Changing thoughts then naturally shifts behavior, far more durable than pep talks.</div>
+</div>
+</div>
+
+<div class="callout"><b>CBT is not "positive thinking":</b> it's not swapping "I'm a failure" for "I'm a winner" — that's cheap substitution, ineffective and a little ridiculous. CBT treats the negative thought as a hypothesis, tests its evidence, and arrives at a more <b>balanced and accurate</b> view. The goal is "realism", not "optimism".</div>
+
+<div class="misq"><b>Common misconception:</b> "CBT is too shallow — it doesn't deal with childhood or the unconscious." Partly true: traditional CBT focuses on present symptoms. But modern CBT (especially schema therapy and CBT for personality disorders) does treat early belief formation in depth. CBT isn't "fast-food therapy" — it's "problem-focused therapy".</div>
+
+<div class="refs">
+<b>Key references</b> · Aaron Beck, <i>Cognitive Therapy of Depression</i> (1979); Judith Beck, <i>Cognitive Behavior Therapy: Basics and Beyond</i> (2020) — the contemporary standard textbook</div>
+
+<div class="eng">
+<b>English Insight:</b> "Men are disturbed not by the things which happen, but by the opinions about the things." — Epictetus (Beck's epigraph). Key terms: <b>cognitive triangle</b>, <b>automatic thoughts</b>, <b>core beliefs</b>, <b>schema</b>, <b>behavioral experiment</b>.
+</div>
+
+<div class="practice"><b>This Week's Practice · Trigger-Thought-Emotion 3-column</b>Pick one upsetting moment this week (an interrupted meeting, a child's tantrum, a cold partner). Record: (1) the trigger (objective, camera-style); (2) the sentence that flashed through your head (automatic thought); (3) the emotion (intensity 0-100). Record only; don't judge. After a week, look back for patterns.</div>
+</div>
+
+<!-- Concept 2: 10 distortions -->
+<div class="card">
+<h2>The 10 Cognitive Distortions: How Your Brain Lies to You<span class="en">The 10 Cognitive Distortions</span></h2>
+<span class="tag">recognition tool · self-application</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>In <i>Feeling Good</i> (1980), David Burns distilled Beck's clinical observations into 10 recurring <b>cognitive distortions</b> — not symptoms of disease, but <b>systematic biases of a normal brain under stress</b>. They overlap with Kahneman's cognitive biases but focus on emotional contexts. Everyone has favorite distortions — usually 2-3. Recognizing them is like knowing the common bugs of your own laptop. Burns emphasizes: <b>naming the distortion is itself therapeutic</b> — giving a vague unease an accurate name ("oh, that's all-or-nothing") immediately weakens its grip.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p><i>Feeling Good</i> has sold over 5 million copies and is one of the few self-help books used by psychiatrists as "bibliotherapy" — RCTs show that simply reading it produces significant improvement in mild-to-moderate depression (Smith et al., 1997; Floyd et al., 2004). The 10 distortions are not invented from thin air but a categorization of Beck's clinical observations. Later studies have replicated these patterns across adolescents, older adults, and different cultures. Burns's list overlaps heavily with Albert Ellis's "irrational beliefs", but Burns's language is more concrete and actionable.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The 10 cognitive distortions · with examples</div>
+<div class="distort-grid">
+<div class="dist-item"><b>1. All-or-Nothing</b>not full marks = failure<span class="ex-line">"I didn't exercise today — the whole week's ruined"</span></div>
+<div class="dist-item"><b>2. Overgeneralization</b>once = always<span class="ex-line">"the project failed; I'll never get this right"</span></div>
+<div class="dist-item"><b>3. Mental Filter</b>only see the negative<span class="ex-line">10 compliments invisible, 1 criticism magnified</span></div>
+<div class="dist-item"><b>4. Disqualifying the Positive</b>dismiss the good<span class="ex-line">"they were just being polite"</span></div>
+<div class="dist-item"><b>5. Jumping to Conclusions</b>mind reading + fortune telling<span class="ex-line">"boss didn't reply = displeased"</span></div>
+<div class="dist-item"><b>6. Magnification / Minimization</b>swell flaws, shrink strengths<span class="ex-line">"I'll never get past that bug"</span></div>
+<div class="dist-item"><b>7. Emotional Reasoning</b>feeling = fact<span class="ex-line">"I feel useless, therefore I am"</span></div>
+<div class="dist-item"><b>8. Should Statements</b>moralizing yourself<span class="ex-line">"I should always be patient"</span></div>
+<div class="dist-item"><b>9. Labeling</b>jumping from behavior to essence<span class="ex-line">"I messed up → I'm a loser"</span></div>
+<div class="dist-item"><b>10. Personalization</b>taking on responsibility that isn't yours<span class="ex-line">"my child being upset is my fault"</span></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Why does the brain systematically distort? Evolutionarily, <b>negativity bias</b> was a survival advantage — missing 10 "lion alerts" costs much more than 10 false alarms. But modern "threats" are mostly social and psychological, and overusing this system becomes the engine of anxiety and depression. <b>Depression actively activates multiple distortions</b> — Beck's "negative cognitive triad" (negative views of self, world, future) is a blend of all-or-nothing + mental filter + fortune telling. <b>Women lean more on "personalization" and "should statements"</b> (a social conditioning effect); <b>men lean more on "labeling" and "all-or-nothing"</b> — with plenty of individual variation. Identifying your favorite 2-3 is enough; you don't need mastery of all ten.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Copy these 10 into your phone notes. When emotions surge, open it and match: "which number am I running right now?" — 80% of the time you'll find one.</div>
+<div class="role-item"><b>Parenting</b>"Should statements" is mothers' top distortion — "I should always be patient", "I should never lose my temper". Naming it is liberation.</div>
+<div class="role-item"><b>Partner</b>Mind reading is the biggest killer in intimate relationships. "That expression means they're tired of me" — 99% of the time it's your projection. Ask, don't speculate.</div>
+<div class="role-item"><b>Team</b>A report says "I'll never be good at this kind of project" — classic overgeneralization. Help them list counter-examples (one failure vs. many successes).</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<p>Burns's own <b>Burns Depression Checklist</b> and <b>Burns Anxiety Inventory</b> are daily screening tools (not diagnostic). The clinical standards are <b>PHQ-9</b> (depression) and <b>GAD-7</b> (anxiety) — free, multilingual, 10 minutes. A score ≥10 suggests seeing a professional.</p>
+<a class="tool-link" href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire9" target="_blank">PHQ-9 (depression)</a>
+<a class="tool-link" href="https://www.mdcalc.com/calc/1727/gad7-general-anxiety-disorder7" target="_blank">GAD-7 (anxiety)</a>
+</div>
+
+<div class="misq"><b>Common misconception:</b> don't turn "spotting distortions" into a new form of self-attack — "I'm doing all-or-nothing again, I'm hopeless" is a meta-level distortion. The right attitude is curiosity and kindness — like reading your laptop's system log, not delivering a verdict.</div>
+
+<div class="refs">
+<b>Key references</b> · David Burns, <i>Feeling Good: The New Mood Therapy</i> (1980); Burns, <i>Feeling Great</i> (2020) — updated edition with TEAM-CBT</div>
+
+<div class="eng">
+<b>English Insight:</b> "You feel the way you think." — David Burns. Key terms: <b>cognitive distortion</b>, <b>all-or-nothing</b>, <b>mind reading</b>, <b>fortune telling</b>, <b>emotional reasoning</b>, <b>catastrophizing</b>.
+</div>
+
+<div class="practice"><b>This Week's Practice · My Top 3 Distortions</b>Look back at the 5 most distressing moments of the past month and tag each with its primary distortion. You'll find you have 2-3 high-frequency "favorites". Write them on a sticky note by your monitor — at least once this week, catch one in the act.</div>
+</div>
+
+<!-- Concept 3: Thought records -->
+<div class="card">
+<h2>Thought Records and Socratic Questioning: Scientist-Style Self-Interrogation<span class="en">Thought Records & Socratic Questioning</span></h2>
+<span class="tag">core technique · worksheet-able</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>CBT's most operational tool is the <b>thought record</b> — it forces the cloud of suffering inside your head into a structured 5-to-7-column table. It looks suspiciously simple, but <b>writing itself is therapeutic</b>: externalizing a vague experience into an observable object immediately reduces amygdala activity (Lieberman's 2007 fMRI work showed that just labeling an emotion lowers limbic activity — "name it to tame it"). The table's real power comes from <b>Socratic questioning</b> — the therapist doesn't tell you "your thought is wrong", but uses a series of questions that let <b>you</b> see the weakness of your own evidence. Being convinced by your own logic is ten times more durable than being convinced by someone else's.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>Christine Padesky and Dennis Greenberger standardized the thought-record into a 7-column worksheet in <i>Mind Over Mood</i> (1995; 2nd ed. 2016), now the gold standard for CBT self-help — still widely used clinically 25 years later. <b>Evidence for Socratic questioning</b>: Braun et al. (2015), studying CBT in abusive relationships, showed that frequency of Socratic questioning correlated with symptom improvement — it isn't just a technique, it's the core of the therapeutic relationship. In her 1993 paper <i>Socratic Questioning: Changing Minds or Guiding Discovery?</i>, Padesky's key point: good Socratic questions are about <b>"guided discovery"</b>, not "leading you to the answer I want".</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">Thought record · 7-column version (Mind Over Mood)</div>
+<table class="thought-table">
+<thead><tr><th>Situation</th><th>Emotion</th><th>Automatic thought</th><th>Evidence for</th><th>Evidence against</th><th>Balanced thought</th><th>New emotion</th></tr></thead>
+<tbody>
+<tr>
+<td>Tuesday afternoon, boss reads the report and says "revise it"</td>
+<td>Anxiety 80<br>Shame 65</td>
+<td>"They think I'm not good enough" "I might get sidelined"</td>
+<td>This is the 2nd draft and still needs work; boss frowned</td>
+<td>Past 6 months: 4 projects praised; colleague A also gets asked to revise; boss is demanding with everyone</td>
+<td>"My boss has high standards for everyone — this round of revisions doesn't mean I'm not capable; it means the project matters"</td>
+<td>Anxiety 30<br>Shame 15</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>The heart of Socratic questioning is <b>not presupposing the conclusion</b> — the therapist genuinely doesn't know whether your thought is right, just helps you test it. Padesky proposes four classic question types:</p>
+<div class="socratic">
+<ol>
+<li><b>Evidence questions</b>: "What evidence supports this thought? What evidence is against it?"</li>
+<li><b>Alternative perspective</b>: "If your best friend were in this situation, what would you say to them?"</li>
+<li><b>Pragmatic questions</b>: "What's the effect of believing this thought? What if I believed something else?"</li>
+<li><b>Decatastrophizing</b>: "What's the worst case? Can I cope with it? What's the best case? What's the most likely case?"</li>
+</ol>
+</div>
+<p>Important: <b>don't rush to "evidence against" or "balanced thought" before fully acknowledging the "evidence for"</b>. Writing out the supporting evidence honors the origin of the thought; otherwise you'll feel like you're lying to yourself. CBT isn't convincing yourself "that thought is wrong" — it's discovering that "that thought is <b>one</b> reading, not the <b>only</b> reading".</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Use a thought record once or twice a week on your strongest emotions. Daily isn't required — <b>fewer and deeper</b> beats journal-style venting.</div>
+<div class="role-item"><b>Parenting</b>Don't fill in the balanced thought for your child — ask Socratic questions: "How do you know your classmate doesn't like you?" "Could there be another explanation?"</div>
+<div class="role-item"><b>Partner</b>After a conflict cools, do each other's 7-column tables — actually write out the other's perspective. Much more useful than arguing over "who's right".</div>
+<div class="role-item"><b>Team</b>In 1:1s, don't lecture — ask Socratic questions. Letting reports reach their own conclusions creates much deeper internalization than any pep talk.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<p>Free, printable thought records:</p>
+<a class="tool-link" href="https://www.psychologytools.com/resource/cbt-thought-record/" target="_blank">CBT Thought Record (PDF)</a>
+<a class="tool-link" href="https://mindovermood.com/worksheets-from-mind-over-mood-2nd-edition.html" target="_blank">Mind Over Mood worksheets</a>
+</div>
+
+<div class="callout"><b>On catastrophizing:</b> anxiety loves catastrophizing — the brain auto-plays the worst-case movie. The reverse tool is the <b>3 decatastrophizing questions</b>: (1) What's the probability of the worst case? (2) Even if it happens, where will I be a year later? (3) What coping resources do I have? Writing them down is ten times more effective than running the loop in your head.</div>
+
+<div class="misq"><b>Common misconception:</b> "Socratic questioning" is sometimes misused as "leading interrogation" — using questions to push someone toward your preferred answer. That's an abuse of the technique, not CBT. True Socratic dialogue is <b>humble curiosity</b>, not "I know the answer, let me steer you to it".</div>
+
+<div class="refs">
+<b>Key references</b> · Greenberger & Padesky, <i>Mind Over Mood</i> (2nd ed., 2016) — the most practical self-help book; Padesky, <i>Socratic Questioning</i> (1993)</div>
+
+<div class="eng">
+<b>English Insight:</b> "Don't believe everything you think." — a common CBT mantra. Key terms: <b>thought record</b>, <b>Socratic dialogue</b>, <b>guided discovery</b>, <b>balanced thinking</b>, <b>decatastrophizing</b>.
+</div>
+
+<div class="practice"><b>This Week's Practice · One complete 7-column record</b>Pick one strongly uncomfortable moment this week and fill out the 7-column thought record fully (not in your head — actually written on paper or in a notes app). Key rule: at least 3 entries in "evidence against". After completing, compare your emotion intensity before and after — record the numbers.</div>
+</div>
+
+<!-- Concept 4: Third wave -->
+<div class="card">
+<h2>Third-Wave CBT: When "Changing Thoughts" Isn't Enough<span class="en">Third Wave CBT — ACT, MBCT, DBT</span></h2>
+<span class="tag">modern development · map of approaches</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>The biggest critique of traditional CBT: <b>some pain doesn't need "thought change" — it needs "a different relationship with the thought"</b>. You can challenge "I'm never enough" with thought records forever, but it may be cheaper to <b>stop grappling with it</b> — treat it like a passing cloud you watch, neither believing nor rebutting. That's the core of ACT (Acceptance and Commitment Therapy): <b>cognitive defusion</b>. Third-wave CBT doesn't overturn Beck — it adds three dimensions to his work: <b>mindfulness, acceptance, values</b> — answering the reasonable criticism that CBT was too rational and neglected the body and lived experience.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>Three representative branches:</p>
+<div class="waves">
+<div class="wave w1"><div class="w-lbl">FIRST WAVE · 1950s-60s</div><div class="w-name">Behavior Therapy (BT)</div><div class="w-desc">Skinner, Wolpe → focus on overt behavior, conditioning, exposure. Living legacy today: exposure therapy, behavioral activation, habit reversal.</div></div>
+<div class="wave w2"><div class="w-lbl">SECOND WAVE · 1960s-90s</div><div class="w-name">Cognitive Therapy (CT/CBT)</div><div class="w-desc">Beck, Ellis, Burns → adds the "thought" dimension: cognitive restructuring, thought records, Socratic questioning. The mainstream of contemporary psychotherapy.</div></div>
+<div class="wave w3"><div class="w-lbl">THIRD WAVE · 1990s-present</div><div class="w-name">ACT / MBCT / DBT</div><div class="w-desc">Hayes (ACT), Segal/Williams/Teasdale (MBCT), Linehan (DBT) → introduce mindfulness, acceptance, values. Handles "pain that can't be eliminated".</div></div>
+</div>
+<p style="margin-top:8px"><b>ACT (Acceptance and Commitment Therapy)</b>: founded by Steven Hayes, organized around "psychological flexibility" via 6 processes (acceptance, cognitive defusion, present-moment awareness, self-as-context, values, committed action). Hayes's <i>Get Out of Your Mind and Into Your Life</i> (2005) is a starter. <b>MBCT (Mindfulness-Based Cognitive Therapy)</b>: developed by Segal et al. (2002), built specifically to prevent relapse in depression — meta-analyses show ~30% lower relapse rates for recurrent depression (Kuyken et al., 2016). <b>DBT (Dialectical Behavior Therapy)</b>: built by Marsha Linehan for borderline personality, adding "dialectics" (acceptance + change held together) and emotion-regulation skills modules.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>The key third-wave concept is <b>cognitive defusion</b> — seeing a thought as <b>"a product of the mind"</b> rather than <b>"a description of reality"</b>. Classic exercise: replace "I'm a failure" with "I notice I'm having the thought that I'm a failure" — that one extra layer of psychological distance immediately weakens the thought's grip. ACT also emphasizes <b>values orientation</b> — instead of "how do I get rid of my anxiety?", ask "if anxiety stays but I can still do what truly matters to me, is that enough?" This shift from "symptom elimination" to "meaningful life" is especially powerful for chronic problems (uneliminable anxiety, chronic pain, grief). <b>Behavioral activation</b> is another repeatedly validated technique: in depression, don't wait for motivation — <b>act first, motivation follows</b>. This is the opposite direction from "thought first" but equally effective (Dimidjian et al., 2006: BA matches CBT and matches medication for severe depression).</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>For long-running "old thoughts" ("I don't deserve it", "I'll never be enough"), try ACT defusion — "ah, that old friend of a thought again." No rebuttal, just observe.</div>
+<div class="role-item"><b>Parenting</b>Don't always "fix" your child's negative feelings. Teach them "feelings are like weather; they pass" — MBCT's greatest gift to children.</div>
+<div class="role-item"><b>Partner</b>"Values clarification" conversations: ask each other yearly, "what kind of partner / parent do we want to be this year?" — far more nourishing for long-term relationships than "solving problems".</div>
+<div class="role-item"><b>Team</b>When a report is depressed and stuck, behavioral activation beats counseling — do one small concrete thing together, often breaks the freeze.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<p>ACT's recommended <b>values clarification exercise</b>: the "Bull's Eye Value Survey" — rates how close your current life is to your values across work, relationships, health, leisure. Free tools:</p>
+<a class="tool-link" href="https://thehappinesstrap.com/upimages/Worksheet_for_Bullseye_Value.pdf" target="_blank">ACT Bull's Eye worksheet</a>
+<a class="tool-link" href="https://www.actmindfully.com.au/free-stuff/worksheets/" target="_blank">Russ Harris ACT worksheets</a>
+</div>
+
+<div class="callout"><b>How to choose:</b> acute anxiety / depression with clear distorted thoughts → traditional CBT is fastest. Chronic, uneliminable pain, seeking meaning → ACT/MBCT is deeper. Severe emotional instability or self-harm → DBT is most targeted. Many therapists integrate across approaches — don't get rigid about labels.</div>
+
+<div class="misq"><b>Common misconception:</b> "ACT is more advanced than CBT" — wrong. Their evidence bases are comparable; they suit different populations. Also don't conclude "I've learned mindfulness, I don't need thought records" — these are complementary tools. The criterion is always: <b>does it work on your problem right now?</b></div>
+
+<div class="refs">
+<b>Key references</b> · Steven Hayes, <i>A Liberated Mind</i> (2019); Russ Harris, <i>The Happiness Trap</i> (2007) — the most accessible ACT introduction; Segal/Williams/Teasdale, <i>Mindfulness-Based Cognitive Therapy for Depression</i> (2nd ed., 2013); Linehan, <i>DBT Skills Training Manual</i> (2014)</div>
+
+<div class="eng">
+<b>English Insight:</b> "You can't stop the waves, but you can learn to surf." — Jon Kabat-Zinn. Key terms: <b>cognitive defusion</b>, <b>psychological flexibility</b>, <b>values-based action</b>, <b>behavioral activation</b>, <b>radical acceptance</b>.
+</div>
+
+<div class="practice"><b>This Week's Practice · Defusion + values, twin experiment</b>(1) Pick one recurring negative thought; all week add the prefix "I notice I'm having the thought that ___". See whether its grip weakens. (2) Write down what you actually value in four domains (work / relationships / health / leisure) — not goals, values — and rate how close this week was. Two practices, non-overlapping, under 20 minutes combined.</div>
+</div>
+
+<nav class="back"><a href="index.en.html">← Back to index</a></nav>
+
+</div>
+</body></html>
