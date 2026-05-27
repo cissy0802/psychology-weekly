@@ -73,6 +73,26 @@ for F in $NEW_FILES; do
     echo "       Use 「」 / 『』 or HTML entity &quot;"
     exit 1
   fi
+
+  # CJK + inline <b>english phrase</b> line-break guard: needs overflow-wrap / word-break
+  # otherwise bold English phrases get pushed to next line, leaving awkward whitespace.
+  if ! grep -qE 'overflow-wrap *: *(break-word|anywhere)' "$F"; then
+    echo "ERROR: $F lacks 'overflow-wrap:break-word' in CSS."
+    echo "       Add to body{}: overflow-wrap:break-word;word-break:break-word"
+    echo "       Without this, inline <b>english</b> phrases force awkward line breaks in CJK paragraphs."
+    exit 1
+  fi
+
+  # display:block on <b> must be scoped to first-child only.
+  # An unscoped ".role-item b{display:block}" turns EVERY inline <b> emphasis in the
+  # description into a block, breaking paragraphs into vertical fragments.
+  BAD_BLOCK=$(grep -cE '\.(role-item|practice) b *\{[^}]*display: ?block' "$F" || true)
+  if [ "$BAD_BLOCK" -gt 0 ]; then
+    echo "ERROR: $F has unscoped '.role-item b{display:block}' or '.practice b{display:block}'."
+    echo "       This breaks inline <b>emphasis</b> in descriptions."
+    echo "       Use '.role-item > b:first-child{display:block}' instead."
+    exit 1
+  fi
 done
 
 # ---------- Duplicate N check (across same KIND, both lang variants) ----------
