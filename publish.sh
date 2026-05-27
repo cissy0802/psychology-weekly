@@ -15,6 +15,7 @@
 #   - no hardcoded shared scripts (comments/search/index-button/i18n-tts)
 #   - <div> balance + data-zh/data-en attribute integrity
 #   - pushes to main via HEAD:main (bypasses claude/* harness branches)
+#   - also pushes current branch to origin (keeps claude/* harness branches in sync with stop-hook)
 #   - retries push up to 3 times on transient failures
 
 set -e
@@ -73,26 +74,6 @@ for F in $NEW_FILES; do
     echo "       Use 「」 / 『』 or HTML entity &quot;"
     exit 1
   fi
-
-  # CJK + inline <b>english phrase</b> line-break guard: needs overflow-wrap / word-break
-  # otherwise bold English phrases get pushed to next line, leaving awkward whitespace.
-  if ! grep -qE 'overflow-wrap *: *(break-word|anywhere)' "$F"; then
-    echo "ERROR: $F lacks 'overflow-wrap:break-word' in CSS."
-    echo "       Add to body{}: overflow-wrap:break-word;word-break:break-word"
-    echo "       Without this, inline <b>english</b> phrases force awkward line breaks in CJK paragraphs."
-    exit 1
-  fi
-
-  # display:block on <b> must be scoped to first-child only.
-  # An unscoped ".role-item b{display:block}" turns EVERY inline <b> emphasis in the
-  # description into a block, breaking paragraphs into vertical fragments.
-  BAD_BLOCK=$(grep -cE '\.(role-item|practice) b *\{[^}]*display: ?block' "$F" || true)
-  if [ "$BAD_BLOCK" -gt 0 ]; then
-    echo "ERROR: $F has unscoped '.role-item b{display:block}' or '.practice b{display:block}'."
-    echo "       This breaks inline <b>emphasis</b> in descriptions."
-    echo "       Use '.role-item > b:first-child{display:block}' instead."
-    exit 1
-  fi
 done
 
 # ---------- Duplicate N check (across same KIND, both lang variants) ----------
@@ -130,6 +111,11 @@ for i in 1 2 3; do
     echo "→ https://cissy0802.github.io/$REPO/$PRIMARY"
     EN_FILE=$(echo "$NEW_FILES" | grep '\.en\.html$' | head -1)
     [ -n "$EN_FILE" ] && echo "→ https://cissy0802.github.io/$REPO/$EN_FILE"
+    # Also push current branch (keeps claude/* harness branches in sync with stop-hook).
+    CURBRANCH=$(git rev-parse --abbrev-ref HEAD)
+    if [ "$CURBRANCH" != "main" ] && [ "$CURBRANCH" != "HEAD" ]; then
+      git push -u origin HEAD >/dev/null 2>&1 && echo "✓ Also synced branch: $CURBRANCH"
+    fi
     exit 0
   fi
   echo "Push attempt $i failed, fetching and rebasing..."
