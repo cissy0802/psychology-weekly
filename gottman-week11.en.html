@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology Week 11: Gottman's Marriage Lab — What Long-Lasting Couples Get Right</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.horsemen{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.horseman{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.88rem}
+.horseman b{color:#c84a4a;display:block;margin-bottom:4px;font-size:0.95rem}
+.horseman .anti{color:#4a8a4a;font-size:0.82rem;margin-top:6px;display:block}
+.bidflow{display:flex;justify-content:space-between;gap:8px;margin-top:8px}
+.bidcell{flex:1;background:#fff;border-radius:10px;padding:12px 10px;text-align:center;font-size:0.85rem;border-top:3px solid}
+.bidcell b{display:block;margin-bottom:4px}
+.bidcell.toward{border-color:#4a8a4a}.bidcell.toward b{color:#4a8a4a}
+.bidcell.away{border-color:#a8a8a8}.bidcell.away b{color:#8a8a8a}
+.bidcell.against{border-color:#c84a4a}.bidcell.against b{color:#c84a4a}
+.ratio{display:flex;align-items:center;justify-content:center;gap:14px;font-size:1.3rem;font-weight:700;color:#7a3e8c;margin-top:10px}
+.ratio .pos{color:#4a8a4a}.ratio .neg{color:#c84a4a}
+details{margin-top:12px;background:#fbf3fb;border-radius:10px;padding:12px 16px}
+details summary{cursor:pointer;font-weight:600;color:#7a3e8c;font-size:0.95rem}
+details > div{margin-top:10px;font-size:0.92rem;color:#3a2a3a;line-height:1.7}
+.deep{margin-top:32px;padding:24px 22px;background:#fff;border-radius:14px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+.deep h3{color:#7a3e8c;font-size:1.1rem;margin-bottom:8px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.horsemen{grid-template-columns:1fr}.bidflow{flex-direction:column}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">WEEK 11 · MARRIAGE & INTIMACY</div>
+<h1>Gottman's Marriage Lab: What Long-Lasting Couples Get Right</h1>
+<div class="meta">2026.05.30 · BigCat's Inner World</div>
+<div class="intro">John Gottman spent 40 years doing something few researchers attempted: turning "which relationships survive" into an observable, quantifiable scientific question — through video, physiological monitoring, and longitudinal follow-up. His findings are both counterintuitive and practical. It's not passion, not compatibility — it's a handful of small daily moves.</div>
+</header>
+
+<!-- Concept 1: Four Horsemen -->
+<div class="card">
+<h2>The Four Horsemen: Communication Patterns That Predict Divorce<span class="en">The Four Horsemen of the Apocalypse</span></h2>
+<span class="tag">Conflict Communication · Risk Signals</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Gottman's Seattle "Love Lab" coded thousands of conflict videos and found four patterns whose frequency and intensity predict, with about <strong>~90% accuracy</strong>, whether a couple will divorce within 4-6 years: criticism, contempt, defensiveness, stonewalling. <strong>Contempt</strong> is the single most lethal predictor.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Gottman & Levenson's longitudinal work, started 1992, has followed 3000+ couples. The famous "93.6% accuracy" figure was post-hoc fit; true forward-prediction effects are r ≈ 0.45-0.55 — still rare in psychology. Kiecolt-Glaser's immunology research extended this: couples with chronic contemptuous interactions show slower wound healing and elevated baseline cortisol. <strong>Contempt is not only psychological harm; it is biological harm.</strong></p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The Four Horsemen vs Their Antidotes</div>
+<div class="horsemen">
+<div class="horseman"><b>Criticism</b>"You're so selfish" — attacking character, not specific behavior<span class="anti">→ Antidote: gentle start-up + specific complaint</span></div>
+<div class="horseman"><b>Contempt</b>Eye-rolling, sneering, name-calling — a one-up posture<span class="anti">→ Antidote: daily gratitude and admiration</span></div>
+<div class="horseman"><b>Defensiveness</b>"It's not me, it's you" — refusing any responsibility<span class="anti">→ Antidote: accept even 5%</span></div>
+<div class="horseman"><b>Stonewalling</b>Silence, withdrawal, no response — usually flooded<span class="anti">→ Antidote: physiological 20-min break</span></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p><strong>Stonewalling</strong> is rarely malicious. Gottman's synchronized heart-rate measurements show that when HR exceeds 100 bpm, the prefrontal cortex's regulation of the limbic system drops sharply — the partner enters <b>flooding</b>: sympathetic overload, inability to process information. They biologically cannot continue, not won't. Men hit the flooding threshold first in 80% of cases (related to baseline HR/HRV sex differences). This matches the polyvagal model's "dorsal vagal freeze" response.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Identify your most-used horseman. Most people have one default — usually inherited from your family of origin.</div>
+<div class="role-item"><b>Partner</b>When they stonewall, it's not cold-war silence — it's physiological overload. Agree on a 20-min break, but state "I'll come back" — otherwise it triggers abandonment.</div>
+<div class="role-item"><b>Team</b>Contempt = toxic leadership. Adam Grant's research identifies contempt from higher-status to lower-status as the single biggest destroyer of psychological safety.</div>
+<div class="role-item"><b>Parenting</b>Children record every criticism/contempt between parents and replay it in their own intimate relationships 20 years later.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "Volatile couples = bad relationship." Gottman identified three styles of stable marriage: volatile, avoidant, validating. All three can last — what matters is the <strong>ratio of horsemen to repair attempts</strong>, not the fighting itself.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Gottman & Levenson, "Marital Processes Predictive of Later Dissolution" (1992) · Gottman, <i>Why Marriages Succeed or Fail</i> (1994) · Kiecolt-Glaser, "Hostile marital interactions, proinflammatory cytokine production, and wound healing" (2005)
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Recall your last 3 conflicts with a partner (or close collaborator). Which horseman appeared each time? <b>Reflect:</b> Which horseman did you see most in your childhood home? Is it still your default weapon today?
+</div>
+</div>
+
+<!-- Concept 2: Bids -->
+<div class="card">
+<h2>Bids for Connection: The Daily Currency of Relationships<span class="en">Bids & Turning Toward</span></h2>
+<span class="tag">Intimacy Accumulation · Daily Interaction</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Relationships don't survive on big events — they survive on dozens of tiny daily "bids for connection": a comment, a glance, a question. Gottman's Apartment Lab tracked couples for 6 years and found long-lasting partners turned toward each other's bids <strong>86%</strong> of the time; couples who split: only <strong>33%</strong>.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Gottman's "Apartment Lab" filmed 130 newlywed couples for 24 hours, coding every micro-interaction. The turn-toward ratio at year one was the strongest predictor of relationship survival at year six — stronger than conflict intensity itself. This dovetails tightly with Bowlby-Ainsworth attachment theory: adult security comes not from grand reassurances but from daily "availability + responsiveness."</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">When a partner makes a bid, three responses</div>
+<div class="bidflow">
+<div class="bidcell toward"><b>Turn Toward</b>Look up, respond, engage<br>(even 3 seconds counts)</div>
+<div class="bidcell away"><b>Turn Away</b>Don't notice, don't respond<br>(most common killer)</div>
+<div class="bidcell against"><b>Turn Against</b>Irritated, critical<br>"Can't you see I'm busy?"</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>What matters is not the <strong>quality</strong> of response — it's the <strong>frequency</strong>. Each turn-toward is a deposit in the emotional bank. Bids that go unanswered cause the sender to <strong>stop bidding</strong> — this is the earliest and most invisible sign of intimacy decay, long before fighting begins. Note: turning away is usually not hostile (you're on your phone, lost in thought), but cumulatively it does the same damage as turning against.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Partner</b>"Look at that cloud" isn't small talk — it's a bid. Pause the phone for 5 seconds. Beats a "quality" weekend date.</div>
+<div class="role-item"><b>Parenting</b>School-age kids issue dozens of bids ("Mom, look!"). Accumulated turn-toward beats "one quality hour" for building security.</div>
+<div class="role-item"><b>Self</b>Notice how many of your own bids get answered. If they're routinely ignored, have you quietly started bidding less?</div>
+<div class="role-item"><b>Team</b>1-on-1s aren't agenda meetings — they're high-density bid time. A direct report's small question, casual sharing, or "let me show you this" is a bid.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "I'm too busy to spend time with them." 3 seconds of turning toward beats 30 minutes of distracted "presence." <strong>Attention is the currency, not time.</strong>
+</div>
+
+<div class="refs">
+<b>Key references</b> · Gottman, <i>The Relationship Cure</i> (2001) · Carrère & Gottman, "Predicting Divorce Among Newlyweds from the First Three Minutes of a Marital Conflict Discussion" (1999) · Driver & Gottman, "Daily Marital Interactions and Positive Affect During Marital Conflict" (2004)
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>For 3 days, when a partner or child makes a bid, drop your response latency to zero — look up, make eye contact, respond in one line. <b>Reflect:</b> Is your default state turn-toward or turn-away? Who and what shaped that default?
+</div>
+</div>
+
+<!-- Concept 3: Repair Attempts -->
+<div class="card">
+<h2>Repair Attempts: The Real Superpower in Conflict<span class="en">Repair Attempts</span></h2>
+<span class="tag">Conflict Repair · Meta-Communication</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Long-lasting couples still produce all four horsemen. The difference: they can <strong>repair</strong>. A clumsy joke, "I just said that too harshly," an inside reference, a hand gesture — all count as repair attempts. What decides survival is not conflict intensity but whether <strong>repair signals get received</strong>.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Coding conflict tapes, Gottman found that struggling couples also attempt repair — but <strong>at lower rates and often rejected</strong> by partners whose emotional account is already drained by contempt. Masters succeed >50% of the time, and the repair itself can be clumsy — what matters is reception, not form. Precondition: both partners' HR < 100. Once flooded, the brain can't recognize repair signals.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Repair requires two conditions: (1) the sender is willing to temporarily drop the "I'm winning" stance; (2) the receiver has low enough physiological arousal. This is why Gottman calls the 20-minute conflict break the <strong>prerequisite technique</strong> for repair — it's not avoidance, it creates the neural conditions for it. Same root as Daniel Siegel's "<strong>connect before correct</strong>": until the limbic system is soothed, the prefrontal cortex isn't online and reasoning is wasted breath.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Partner</b>Build a shared "repair vocabulary" — an inside joke, a hand signal, "we've gone off-track, restart." Pre-agreement > improvisation.</div>
+<div class="role-item"><b>Parenting</b>When a child is in an emotional storm, soothe the nervous system before reasoning. Co-regulation precedes cognitive intervention.</div>
+<div class="role-item"><b>Self</b>You repair with yourself too. After you mess up, is the inner voice contemptuous ("here you go again") or repairing ("okay, next time")?</div>
+<div class="role-item"><b>Team</b>Post-conflict debriefs are repair attempts. But wait for the temperature to drop — otherwise it's just delayed second-hand damage.</div>
+</div>
+</div>
+
+<div class="callout">
+<b>Key finding:</b> 69% of marital conflicts are "perpetual problems" — values, pace, personality differences — that <strong>will never be solved</strong>, only managed. Masters learn to <strong>live with</strong> perpetual problems rather than eliminate them. This resonates genuinely with Buddhist notions of impermanence and "things as they are" — love is not remaking your partner but accepting what cannot be remade.
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "Repair only counts if it's a real apology." Gottman's data shows humor, changing the subject, taking a break, even being a little silly all count as repair. <strong>Form doesn't matter — being received does.</strong>
+</div>
+
+<div class="refs">
+<b>Key references</b> · Gottman, <i>The Seven Principles for Making Marriage Work</i> (1999) · Daniel Siegel, <i>The Whole-Brain Child</i> (2011) · Gottman & Silver, <i>What Makes Love Last?</i> (2012)
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Agree on a "pause gesture" with your partner — palm raised, an inside phrase — as the conflict-repair trigger. <b>Reflect:</b> Which form of repair do you find hardest to accept (jokes? apology? withdrawal?)? Does that connect to how forgiveness happened in your childhood?
+</div>
+</div>
+
+<!-- Concept 4: 5:1 & PSO -->
+<div class="card">
+<h2>The 5:1 Magic Ratio and Positive Sentiment Override<span class="en">The Magic Ratio & Positive Sentiment Override</span></h2>
+<span class="tag">Relationship Reserve · Cognitive Lens</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Long-lasting couples maintain a stable "magic ratio" — about <strong>20:1</strong> in everyday life, <strong>5:1</strong> even during conflict (positive vs negative interactions). When the account is full enough, partners enter <strong>Positive Sentiment Override (PSO)</strong>: ambiguous or neutral signals get the <strong>charitable interpretation</strong> by default.</p>
+</div>
+
+<div class="ratio"><span class="pos">5 positive</span>＋<span class="neg">1 negative</span>＝ stable</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Coding "affection moments vs irritation moments," Gottman found couples below 5:1 had >90% probability of separation within 6 years. PSO/NSO comes originally from Robert Weiss — the same sentence carries opposite meaning in the two modes. This aligns tightly with Barbara Fredrickson's <strong>Broaden-and-Build</strong> theory: positive affect isn't a reward, it's a <strong>resource reserve</strong> for the relational system. And from a complex-systems lens, relationships get drawn into one of two attractor states (PSO or NSO) — recovering once past the tipping point is hard.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>PSO is a cognitive filter. The same "why aren't you home yet?" — heard as "I'm worried about you" when the account is full, heard as "you're criticizing me again" when overdrawn. The real lever for improving a relationship is not eliminating conflict but <strong>increasing positive frequency daily</strong>: gratitude, curiosity, touch, shared laughter, admiration. Gottman calls this "<strong>small things often</strong>" — grand efforts (anniversaries, expensive gifts) work less than a 6-second hug and three daily acknowledgments.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Partner</b>Say 3 specific thanks per day ("thanks for taking out the trash tonight"). Not flattery — ratio maintenance.</div>
+<div class="role-item"><b>Parenting</b>The 5:1 ratio applies to parent-child too. One criticism needs five positive interactions to balance. Children weight negative signals more heavily.</div>
+<div class="role-item"><b>Self</b>The inner dialogue has its own ratio. People with low SCS scores (Neff's self-compassion) often run below 1:1 internally. Fix yourself first, then partner.</div>
+<div class="role-item"><b>Team</b>If a leader's feedback runs 1:1 or worse over time, the team enters NSO — everything the direct report does looks wrong. Before any change initiative, fund the account first.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "If I don't criticize, that's good enough." Neutral doesn't count as positive. <strong>A silent marriage is a slowly bleeding marriage</strong> — unanswered bids drain the account too.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Gottman, <i>The Seven Principles for Making Marriage Work</i> · Fredrickson, <i>Positivity</i> (2009) · Weiss, "Strategic behavioral marital therapy" (1980, original PSO concept)
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>For 3 days, log every interaction with your partner as +/0/−. Compute the ratio. <b>Reflect:</b> How is the ratio shaping the "image" you hold of them? Is your account balance already coloring how you interpret neutral signals?
+</div>
+</div>
+
+<!-- Deeper Reflection -->
+<div class="deep">
+<h3>【Deeper Reflection】</h3>
+
+<details><summary>1. Do Gottman's findings transfer across cultures — especially high-context, indirect-expression ones?</summary>
+<div>Gottman's data is mostly North American heterosexual couples. Replication in LGBTQ couples has been strong (in fact LGBTQ couples show slightly higher repair rates). Cross-cultural is the real frontier: in high-context East Asian contexts, <strong>direct verbal gratitude may feel awkward</strong> — the "6-second hug" prescription doesn't translate one-to-one. But underlying mechanisms (bids, repair, PSO) should be culturally stable, while <strong>expression form</strong> needs localization. For instance, cooking and pouring tea as non-verbal bids likely run denser in East Asian samples than coded in Gottman's North American corpus.</div></details>
+
+<details><summary>2. How does this resonate with Buddhist "impermanence" and "things as they are"?</summary>
+<div>The 69%-perpetual-problems finding essentially says <strong>most conflict comes from differences you cannot remake</strong>. Masters don't eliminate the differences; they coexist with them. This mirrors the Buddhist injunction to accept impermanence — love is not turning your partner into your ideal but choosing them after seeing their actual form. But beware cheap "acceptance" — it's often weaponized to rationalize tolerating contempt or abuse. Healthy acceptance targets style/pace differences, not violations of core boundaries.</div></details>
+
+<details><summary>3. At the neuroscience level, are flooding and stonewalling really the same thing?</summary>
+<div>Gottman measures flooding with HR, skin conductance, and HRV — the pattern matches Stephen Porges's polyvagal "dorsal vagal freeze" response (parasympathetic over-activation → shutdown). However, polyvagal theory itself remains contested in neuroscience (see Week 8). What's well-established: <strong>during flooding, prefrontal cortex goes offline</strong>. So the 20-minute break isn't avoidance — it's the physiological prerequisite for prefrontal recovery.</div></details>
+
+<details><summary>4. Can AI help with intimate relationships — e.g., analyzing conflict transcripts and identifying horsemen?</summary>
+<div>Technically yes — Gottman's own group has built tools like Gottman Connect. Opportunity: making "what pattern are we repeating?" visible. Risks: (1) using AI as a judge to "evidence" your partner just reinforces contempt; (2) privacy — intimate dialogue recorded by an external system changes the quality of the interaction (observer effect); (3) engineering the relationship may crowd out the "unconditional" feeling PSO depends on. AI should be a shared mirror, not a unilateral weapon.</div></details>
+
+<details><summary>5. Does this apply to non-married, non-monogamous, or chosen-family relationships?</summary>
+<div>Four horsemen, bids, repair, and PSO are findings about <strong>relational dynamics</strong>, not marriage per se. They apply equally to friendships, business partners, co-parents, and polyamorous configurations. Gottman's later work (<i>What Makes Love Last</i>) explicitly extends the theory to "any committed connection." Where it genuinely doesn't apply is low-investment, low-frequency relationships — too few bids for the patterns to register statistically.</div></details>
+
+</div>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Weekly Index</a></nav>
+
+</div>
+</body></html>
