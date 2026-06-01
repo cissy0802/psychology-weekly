@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology Day 13: Depression & Anxiety — Not Weakness, but Treatable States</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.tool-link{display:inline-block;background:#e8d8e8;color:#7a3e8c;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
+.tool-link:hover{background:#d8b8d8}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:90px;color:#5a4a5a;font-weight:600;flex-shrink:0}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.78rem;font-weight:600}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.spectrum{display:flex;margin-top:10px;border-radius:10px;overflow:hidden;font-size:0.8rem;text-align:center}
+.spectrum div{padding:10px 6px;color:#fff;flex:1;line-height:1.4}
+.crisis{background:#fde8e8;border:2px solid #c84a4a;border-radius:12px;padding:16px 20px;margin-top:14px;font-size:0.93rem;color:#5a3a3a}
+.crisis b{color:#c84a4a}
+details{margin-top:12px;background:#fbf3fb;border-radius:10px;padding:4px 16px}
+details summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:10px 0;font-size:0.95rem}
+details div{font-size:0.92rem;color:#4a3a4a;padding:0 0 12px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:72px;font-size:0.8rem}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">DAY 13 · CLINICAL PSYCHOLOGY</div>
+<h1>Depression & Anxiety: Not Weakness, but Treatable States</h1>
+<div class="meta">2026.06.01 · BigCat's Inner World</div>
+<div class="intro">What separates a low mood from clinical depression? What is anxiety, really? Which treatments are evidence-based, and which are myths? And when should you stop "toughing it out" and see a professional? This is education, not diagnosis or medical advice.</div>
+</header>
+
+<!-- Concept 1 -->
+<div class="card">
+<h2>One Continuum: Clinical vs. Subclinical<span class="en">The Clinical–Subclinical Continuum</span></h2>
+<span class="tag">Clinical Psychology · Diagnosis</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Depression and anxiety aren't on/off switches; they sit on a continuum, from normal mood swings, through subclinical distress, to clinical disorder. The dividing line isn't "are you sad," but three dimensions—<strong>intensity × duration × functional impairment</strong>. DSM-5's clinical threshold is roughly: symptoms persisting more than two weeks and clearly impairing work, relationships, or daily functioning.</p>
+</div>
+
+<div class="section">
+<span class="label">The Mechanism</span>
+<p>Depression ≠ sadness. The core of clinical depression often isn't crying, but <strong>anhedonia</strong> (no interest in anything) and depleted drive. Anxiety ≠ fear; it's <strong>excessive anticipation of future threat + avoidance</strong>. The two are highly comorbid—about half of depressed people also have an anxiety disorder—because they share neural substrates (a dysregulated HPA stress axis, and faulty amygdala–prefrontal regulation).</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">One continuum: from mood swings to clinical disorder</div>
+<div class="spectrum">
+<div style="background:#9ac49a">Normal swings<br>passes in days</div>
+<div style="background:#c4b85a">Subclinical<br>persistent, still functioning</div>
+<div style="background:#c8924a">Clinical<br>&gt;2 wks + impaired</div>
+<div style="background:#c84a4a">Crisis<br>self-harm / can't function</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Apply It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Tell apart "I'm off today" from "I've been like this for two weeks and even enjoyable things feel flat." The latter is a signal, not melodrama.</div>
+<div class="role-item"><b>Parenting</b>Kids' depression/anxiety often shows not as "I'm sad" but as <b>irritability, physical complaints, school refusal</b>. Don't default to "attitude problem."</div>
+<div class="role-item"><b>Team</b>Sudden withdrawal, absence, or a cliff in output may be a state signal, not "slacking." Care for the person first, then the work.</div>
+<div class="role-item"><b>Partner</b>Their "I don't want to do anything" may be anhedonia—a symptom, not laziness, and not about you.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "Depression is just overthinking / not being strong enough." Clinical depression has a measurable physiological basis, unrelated to toughness. Another myth: subclinical states "don't matter"—in fact, subclinical distress is one of the <strong>strongest predictors</strong> of later clinical disorder. Worth catching early.
+</div>
+
+<div class="refs">
+<b>Key references</b> · DSM-5-TR (American Psychiatric Association) · Ronald Kessler et al. on depression–anxiety comorbidity epidemiology
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "Depression is not a sign of weakness; it is a sign that you have been trying to be strong for too long."
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Using the three rulers—intensity × duration × function—where does your most recent low fall on the continuum?<br>Reflection: Is there a hidden rule that you "must hold it together" that keeps you from taking your state seriously?
+</div>
+</div>
+
+<!-- Concept 2 -->
+<div class="card">
+<h2>What Actually Works: Evidence-Based Treatment<span class="en">Evidence-Based Treatments</span></h2>
+<span class="tag">Clinical Psychology · Intervention</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Depression and anxiety are among the <strong>most solidly evidenced areas in all of psychology</strong> for treatment. The first-line options are clear and validated by large randomized trials: CBT, behavioral activation, exposure therapy (for anxiety), SSRI medication, and regular exercise for mild-to-moderate cases. "Just push through it" usually fails for moderate-to-severe cases and only delays help.</p>
+</div>
+
+<div class="section">
+<span class="label">The Mechanism</span>
+<p><strong>Behavioral Activation</strong>: depression makes you withdraw → withdrawal removes the "positive reinforcement" of pleasure and mastery → deeper depression. You break it with a counterintuitive principle—<strong>action precedes motivation</strong>: do it first (even unmotivated), and mood follows. <strong>Exposure therapy for anxiety</strong>: avoidance brings short-term relief but maintains anxiety long-term; facing the feared thing gradually lets the amygdala learn "the threat didn't happen" (extinction learning), and anxiety finally recedes.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">What each approach targets</div>
+<div class="matrix">
+<div class="matrix-cell"><b>Behavioral Activation</b>Targets withdrawal & anhedonia: rebuild pleasure/mastery activities</div>
+<div class="matrix-cell"><b>CBT</b>Targets distorted thinking: spot and test automatic negative thoughts</div>
+<div class="matrix-cell"><b>Exposure Therapy</b>Targets avoidance (anxiety's core): gradual facing, fear extinction</div>
+<div class="matrix-cell"><b>Medication / Exercise</b>SSRIs steady the emotional baseline; exercise has a moderate effect on mild-moderate cases</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Apply It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Build a "behavioral activation list": 3 small things that give a sense of <b>mastery</b> or <b>pleasure</b>; do one each day even without the mood. Rate your mood before and after.</div>
+<div class="role-item"><b>Partner</b>Being present ≠ fixing it. Don't say "just cheer up." What helps: presence, no judgment, and helping them take the first step toward resources.</div>
+<div class="role-item"><b>Parenting</b>When a child is anxious, don't help them avoid (skipping school, the event)—that feeds anxiety. Gently support small steps toward facing it.</div>
+<div class="role-item"><b>Team</b>Don't demand people "white-knuckle through it." Normalizing help-seeking is itself an effective organizational intervention.</div>
+</div>
+</div>
+
+<div class="callout">
+<b>Cross-disciplinary link:</b> "Action precedes motivation" is a core thesis of behaviorism—behavior shapes emotion, not just the reverse. It echoes the cognitive-behavioral tradition too: changing observable behavior often moves your state faster than wrestling with thoughts directly.
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "Depression is a serotonin imbalance, and medication just tops serotonin back up." Moncrieff et al.'s 2022 umbrella review shows the <strong>evidence for "low serotonin causes depression" is actually weak</strong>. But this does <strong>not</strong> mean "SSRIs don't work"—they do help moderate-to-severe cases; the mechanism is just far more complex than "refilling a chemical." Another myth: "meds are addictive / change your personality"—antidepressants are not addictive substances.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Pim Cuijpers' meta-analyses of psychotherapy · Jacobson & Martell, <i>Behavioral Activation for Depression</i> · Moncrieff et al., "The serotonin theory of depression: a systematic umbrella review" (2022, Molecular Psychiatry)
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "You don't have to feel motivated to act. Acting comes first; motivation follows." The essence of behavioral activation.
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Pick one small activity you "used to enjoy but recently dropped." Do it once this week; rate your mood 1–10 before and after.<br>Reflection: Do you usually "wait for motivation to act," or "act your way into motivation"? Which works better for you?
+</div>
+</div>
+
+<!-- Concept 3 -->
+<div class="card">
+<h2>Turning "Not Great" into a Number: PHQ-9 / GAD-7<span class="en">Self-Screening Scales</span></h2>
+<span class="tag">Measurement · Self-Assessment</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>PHQ-9 (depression, 9 items) and GAD-7 (anxiety, 7 items) are two free, two-minute, heavily validated self-report scales—the <strong>standard screening tools</strong> in primary care worldwide. They aren't diagnoses, but they turn a vague "I've been off lately" into a trackable number—showing you where you sit on the continuum, and the trend.</p>
+</div>
+
+<div class="section">
+<span class="label">The Mechanism</span>
+<p>The value of a scale is that it <strong>externalizes and makes subjective states trackable</strong>—the trend matters more than any single score. PHQ-9's item 9 specifically screens for "thoughts of self-harm or suicide," the item clinicians weigh most. And depression and anxiety share a maintenance engine: <strong>rumination</strong>. Susan Nolen-Hoeksema's research shows that endlessly chewing on "why am I such a mess" doesn't solve the problem—it deepens depression and prolongs anxiety.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">PHQ-9 score → severity (GAD-7 ranges are similar, slightly lower)</div>
+<div class="bar-row"><div class="bar-label">0–4 minimal</div><div class="bar-track"><div class="bar-fill" style="width:18%;background:#9ac49a">monitor</div></div></div>
+<div class="bar-row"><div class="bar-label">5–9 mild</div><div class="bar-track"><div class="bar-fill" style="width:37%;background:#c4b85a">self-help + track</div></div></div>
+<div class="bar-row"><div class="bar-label">10–14 moderate</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:#c8924a">consider treatment</div></div></div>
+<div class="bar-row"><div class="bar-label">15–27 mod-severe</div><div class="bar-track"><div class="bar-fill" style="width:85%;background:#c84a4a">seek care</div></div></div>
+</div>
+
+<div class="section">
+<span class="label">Apply It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Take the PHQ-9 / GAD-7 every two weeks and log the score. The <b>trend</b> (rising or falling) is more informative than any single absolute number.</div>
+<div class="role-item"><b>Parenting</b>There's a dedicated adolescent version (PHQ-A). But the scale is a hook to open a conversation, not a tool to judge a child.</div>
+<div class="role-item"><b>Team / Leader</b>Never run a "quick test" on your team—this is highly private health information; an organization collecting it is both intrusive and legally risky.</div>
+<div class="role-item"><b>Relationship</b>Taking it together with a partner and sharing scores turns "how I've been" from a vague complaint into something concrete to discuss.</div>
+</div>
+</div>
+
+<div class="callout">
+<b>Cross-disciplinary link (tight):</b> Rumination corresponds neurally to overactivity of the <strong>Default Mode Network</strong> (DMN)—the brain's self-referential, mind-wandering loop that won't switch off. Judson Brewer's research shows <strong>mindfulness meditation reduces DMN activity</strong>. This is the modern neural counterpart of what contemplative traditions call "stilling the stream of thought": rumination ↔ DMN overload ↔ mindfulness/meditation as the antidote.
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<a class="tool-link" href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire-9" target="_blank">PHQ-9 (MDCalc)</a>
+<a class="tool-link" href="https://www.mdcalc.com/calc/1727/gad7-general-anxiety-disorder-7" target="_blank">GAD-7 (MDCalc)</a>
+<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">Both are academically validated, free versions. Results are for self-understanding only and are not a diagnosis.</p>
+</div>
+
+<div class="misq">
+<b>Common myth:</b> treating the scale score as a "diagnosis." It's only screening—a high score means "worth seeing a professional for a formal evaluation," not that you're already "diagnosed" or "sick."
+</div>
+
+<div class="refs">
+<b>Key references</b> · Kroenke & Spitzer, "The PHQ-9" (2001, J Gen Intern Med) · Spitzer et al., "GAD-7" (2006, Arch Intern Med) · Nolen-Hoeksema, <i>Rethinking Rumination</i> (2008)
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "What gets measured gets managed." A scale turns an invisible state into a curve you can actually tend to.
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Take the PHQ-9 and GAD-7 once; note score and date as a future baseline.<br>Reflection: When you ruminate, are you "analyzing the problem" or "replaying the pain"? Can you tell the difference?
+</div>
+</div>
+
+<!-- Concept 4 -->
+<div class="card">
+<h2>The Limits of Self-Help: When to See a Professional<span class="en">When to Seek Professional Help</span></h2>
+<span class="tag">Clinical Psychology · Help-Seeking</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Self-help is genuinely evidence-based (exercise, behavioral activation, CBT workbooks all help), but it has clear limits. If any of these appear, see a professional rather than keep carrying it alone: <strong>symptoms over two weeks impairing function / thoughts of self-harm or suicide / no longer able to maintain daily functioning</strong>.</p>
+</div>
+
+<div class="section">
+<span class="label">The Mechanism</span>
+<p>Why does early intervention matter? Depression shows a <strong>kindling effect</strong> (proposed by Robert Post)—the more episodes you've had, the smaller the trigger needed for the next one, and the lower the relapse threshold. Every untreated moderate-to-severe episode makes the next one easier to ignite. "Waiting for it to pass" usually fails for moderate-to-severe cases and misses the very window where help works best.</p>
+</div>
+
+<div class="crisis">
+<b>⚠ Crisis resources:</b> If you or someone near you has thoughts of self-harm or suicide, or is in an acute mental-health crisis—in the US you can <strong>call or text 988</strong> (Suicide &amp; Crisis Lifeline; free, confidential, 24/7). For emergencies, call 911 or go to the nearest ER. Asking for help is strength, not weakness.
+</div>
+
+<div class="section">
+<span class="label">Apply It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Write yourself a "red-line list": which signals (e.g., two straight weeks of anhedonia, any suicidal thoughts) mean I book a professional—no more talking myself into "wait a bit longer."</div>
+<div class="role-item"><b>Relationship</b>Supporting someone depressed: be present, don't judge, help them find resources—but <b>don't be their therapist</b>. Your role is support, not cure.</div>
+<div class="role-item"><b>Parenting</b>Warning signs in a child: grades plunging, dropping once-loved activities, drastic sleep/appetite shifts, talk of "disappearing" or self-harm. Take them seriously and seek a professional evaluation right away.</div>
+<div class="role-item"><b>Team</b>Know where your company's EAP and other resources are, so you can point people to them—more responsible than playing counselor yourself.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Common myth:</b> "Seeing a therapist means I'm very ill / it's shameful," and "I have to be at the breaking point to deserve help." The reverse is true: the earlier you ask, the simpler the intervention and the fewer relapses. Seeing a therapist is routine health maintenance, like the dentist—not a mark of failure.
+</div>
+
+<div class="refs">
+<b>Key references</b> · 988 Suicide &amp; Crisis Lifeline (US) · Robert Post, "Kindling and sensitization" (1992, Am J Psychiatry) · NICE / APA clinical guidelines for depression and anxiety
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "Asking for help is not giving up. It is refusing to give up."
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Look up a help pathway in advance—which therapists your insurance covers, a nearby clinic, or your EAP entry point—and save it to your phone. Don't go searching mid-crisis.<br>Reflection: If your best friend were in your current state, would you urge them to seek help? Then why hold yourself to a higher bar?
+</div>
+</div>
+
+<!-- Going Deeper -->
+<div class="card">
+<h2>Going Deeper<span class="en">Going Deeper</span></h2>
+
+<details><summary>Is depression's "anhedonia" the same as Buddhism's "three poisons" (greed, hatred, delusion)?</summary>
+<div>No. Anhedonia is a clinical pathology of a down-regulated reward system (dopamine pathways); the Buddhist afflictions describe how the ordinary mind works and how a healthy person can transcend grasping. Forcing them to be equal misreads both medicine and Buddhism. But there's a real intersection: mindfulness meditation (descended from contemplative practice) is evidence-supported for preventing depression relapse (MBCT), partly by reducing rumination and DMN overload. Borrowing the method ≠ equating the concepts.</div></details>
+
+<details><summary>If the "serotonin imbalance" theory is weak, why do SSRIs still work?</summary>
+<div>"Why a drug works" and "what causes the illness" are two separate questions. Aspirin relieves headaches, but headaches aren't caused by a lack of aspirin. SSRIs may act through more complex downstream mechanisms—promoting neuroplasticity, modulating emotional circuits—rather than simply "refilling serotonin." The lesson: effective treatment needn't rest on a simplified causal story—and we should be wary of any "one-sentence cause."</div></details>
+
+<details><summary>Is a diagnostic label (e.g., "Major Depressive Disorder") helpful or harmful?</summary>
+<div>There's real evidence both ways. Upside: it tells someone "this isn't your fault, it's a treatable state," opens doors to help and reimbursement, and reduces self-blame. Cost: stigma, hardened identity ("I'm a depressed person"), or carving a continuum into "sick / not sick." The mature stance is to treat a diagnosis as a <b>navigation tool, not an identity</b>—use it to find direction without letting it define who you are.</div></details>
+
+<details><summary>In East Asian cultures, depression often shows as "physical symptoms"—what does that tell us?</summary>
+<div>Arthur Kleinman's research in China found that many East Asian patients report insomnia, fatigue, and stomach pain more than "I feel sad." This may reflect how culture shapes the language of suffering, plus avoidance of the stigma around psychological symptoms. The takeaway: when screening or supporting someone, don't only ask "how's your mood"—watch for persistent physical complaints with no organic cause; they may be another way of saying emotion.</div></details>
+
+<details><summary>For someone who prizes efficiency, could "behavioral activation" become just another form of self-flagellation?</summary>
+<div>There's a risk. Behavioral activation's core is rebuilding positive reinforcement through small, doable activities centered on <b>pleasure and mastery</b>—not KPIs. If it becomes "I must be productive today or I'm worthless," it has collapsed back into perfectionistic self-attack (see Day 10). The healthy version is self-compassionate (see Day 6): you act to care for yourself, not to prove yourself. The difference is in the motive, not the action.</div></details>
+
+</div>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Daily</a></nav>
+
+</div>
+</body></html>

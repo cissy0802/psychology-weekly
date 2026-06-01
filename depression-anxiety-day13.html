@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理学 Day 13：抑郁与焦虑 — 不是软弱，是可治疗的状态</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.tool-link{display:inline-block;background:#e8d8e8;color:#7a3e8c;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
+.tool-link:hover{background:#d8b8d8}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:90px;color:#5a4a5a;font-weight:600;flex-shrink:0}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.78rem;font-weight:600}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.spectrum{display:flex;margin-top:10px;border-radius:10px;overflow:hidden;font-size:0.8rem;text-align:center}
+.spectrum div{padding:10px 6px;color:#fff;flex:1;line-height:1.4}
+.crisis{background:#fde8e8;border:2px solid #c84a4a;border-radius:12px;padding:16px 20px;margin-top:14px;font-size:0.93rem;color:#5a3a3a}
+.crisis b{color:#c84a4a}
+details{margin-top:12px;background:#fbf3fb;border-radius:10px;padding:4px 16px}
+details summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:10px 0;font-size:0.95rem}
+details div{font-size:0.92rem;color:#4a3a4a;padding:0 0 12px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:72px;font-size:0.8rem}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">DAY 13 · 临床心理学</div>
+<h1>抑郁与焦虑：不是软弱，是可治疗的状态</h1>
+<div class="meta">2026.06.01 · BigCat's Inner World</div>
+<div class="intro">情绪低落和临床抑郁差在哪？焦虑的本质是什么？哪些治疗真有证据、哪些是误区？以及——什么时候该停止"自己扛"，去找专业人士？本期是科普，不是诊断或医疗建议。</div>
+</header>
+
+<!-- 概念 1: 临床 vs 亚临床 -->
+<div class="card">
+<h2>一条连续谱：临床 vs 亚临床<span class="en">The Clinical–Subclinical Continuum</span></h2>
+<span class="tag">临床心理学 · 诊断</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>抑郁和焦虑不是"有或没有"的开关，是一条连续谱：从正常情绪波动，到亚临床困扰，再到临床障碍。区分的关键不是"你有没有难过"，而是三个量纲——<strong>强度 × 持续时间 × 功能损害</strong>。DSM-5 的临床线大致是：症状持续两周以上，且明显影响工作、关系或日常运作。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>抑郁 ≠ 悲伤。临床抑郁的核心常常不是"哭"，而是<strong>快感缺失</strong>（anhedonia，对什么都提不起兴趣）和动力枯竭。焦虑 ≠ 害怕，它是对未来威胁的<strong>过度预期 + 回避</strong>。两者高度共病——约一半抑郁的人同时有焦虑障碍，因为它们共享神经底物（HPA 压力轴失调、杏仁核与前额叶的调节失衡）。</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">同一条谱：从情绪波动到临床障碍</div>
+<div class="spectrum">
+<div style="background:#9ac49a">正常波动<br>几天就过</div>
+<div style="background:#c4b85a">亚临床<br>持续但能运作</div>
+<div style="background:#c8924a">临床障碍<br>&gt;2周+功能受损</div>
+<div style="background:#c84a4a">危机<br>自伤/无法运作</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>分清"我今天状态差"和"我两周都这样、连喜欢的事都没兴趣了"。后者是信号，不是矫情。</div>
+<div class="role-item"><b>育儿</b>孩子的抑郁/焦虑常不说"我难过"，而表现为<b>易怒、身体不适、拒学</b>。别先归为"态度问题"。</div>
+<div class="role-item"><b>团队</b>成员突然退缩、缺勤、效率断崖，可能是状态信号而非"散漫"。先关心人，再谈事。</div>
+<div class="role-item"><b>伴侣</b>对方"什么都不想做"可能是快感缺失——是症状，不是懒，也不是针对你。</div>
+</div>
+</div>
+
+<div class="misq">
+<b>常见误区：</b>"抑郁就是想太多 / 不够坚强"。临床抑郁有可测量的生理基础，和性格软硬无关。另一个误区：亚临床"不用管"——其实亚临床状态是日后发展为临床障碍的<strong>最强预测因子之一</strong>，值得早关注。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · DSM-5-TR（美国精神医学会）· Ronald Kessler 等关于抑郁-焦虑共病的流行病学研究
+</div>
+
+<div class="eng">
+<b>English Insight：</b>"Depression is not a sign of weakness; it is a sign that you have been trying to be strong for too long." 抑郁常不是脆弱，而是硬撑太久的代价。
+</div>
+
+<div class="practice">
+<b>本周练习 + 思考题</b>用"强度×时长×功能"三把尺，回看你最近一次的情绪低谷，落在谱系哪一段？<br>思考题：你心里有没有一条"必须撑住"的隐性规则，让你迟迟不肯把状态当回事？
+</div>
+</div>
+
+<!-- 概念 2: 现代证据治疗 -->
+<div class="card">
+<h2>什么真的有用：现代证据治疗<span class="en">Evidence-Based Treatments</span></h2>
+<span class="tag">临床心理学 · 干预</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>抑郁与焦虑是整个心理学中<strong>治疗证据最扎实的领域之一</strong>。一线方案很明确，且经大量随机对照试验验证：CBT、行为激活、暴露疗法（针对焦虑）、SSRI 类药物，以及对轻中度有效的规律运动。"挺一挺就过去"对中重度往往无效，还会延误。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p><strong>行为激活</strong>（Behavioral Activation）：抑郁让人退缩 → 退缩减少了愉悦和成就的"正强化" → 更抑郁。打破靠一条反直觉原则——<strong>行为先于动机</strong>：先做（哪怕没动力），情绪随后才跟上。<strong>焦虑的暴露疗法</strong>：回避带来短期缓解，却长期维持焦虑；渐进地面对所怕之物，让杏仁核学到"威胁并没发生"（消退学习），焦虑才会真正退潮。</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">主要方案各自打击什么</div>
+<div class="matrix">
+<div class="matrix-cell"><b>行为激活 BA</b>针对退缩与快感缺失：重建愉悦/掌控活动</div>
+<div class="matrix-cell"><b>CBT 认知行为</b>针对扭曲思维：识别并检验自动负性想法</div>
+<div class="matrix-cell"><b>暴露疗法</b>针对回避（焦虑核心）：渐进面对，消退恐惧</div>
+<div class="matrix-cell"><b>药物 / 运动</b>SSRI 稳定情绪底盘；运动对轻中度有中等效应</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>做一份"行为激活清单"：列 3 件有<b>掌控感</b>或<b>愉悦感</b>的小事，每天哪怕没心情也做一件。记录前后的情绪分。</div>
+<div class="role-item"><b>伴侣</b>陪伴 ≠ 解决。别说"想开点"。有用的是：在场、不评判、帮 ta 迈出找资源那一步。</div>
+<div class="role-item"><b>育儿</b>孩子焦虑时别帮 ta 回避（不去上学、不参加），那会喂大焦虑。要温和地支持 ta 小步面对。</div>
+<div class="role-item"><b>团队</b>别要求"靠意志力扛过去"。把"寻求帮助"正常化，本身就是有效的组织干预。</div>
+</div>
+</div>
+
+<div class="callout">
+<b>跨学科连接：</b>"行为先于动机"正是行为主义的核心命题——行动能塑造情绪，而不只是情绪驱动行动。这也呼应认知行为传统：改变可观察的行为，往往比直接对抗念头更快撬动状态。
+</div>
+
+<div class="misq">
+<b>常见误区：</b>"抑郁是血清素失衡，吃药补回来就好"。Moncrieff 等 2022 年的伞状综述显示，<strong>"血清素低导致抑郁"的证据其实很薄弱</strong>。但这<strong>不</strong>等于"SSRI 无效"——它对中重度确有效果，只是机制远比"补充化学物质"复杂。另一误区："吃药会上瘾、改变人格"——抗抑郁药不是成瘾物质。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · Pim Cuijpers 关于心理治疗的系列元分析 · Jacobson & Martell《Behavioral Activation for Depression》· Moncrieff et al.《The serotonin theory of depression: a systematic umbrella review》(2022, Molecular Psychiatry)
+</div>
+
+<div class="eng">
+<b>English Insight：</b>"You don't have to feel motivated to act. Acting comes first; motivation follows." 行为激活的精髓：不等动力，用行动唤回动力。
+</div>
+
+<div class="practice">
+<b>本周练习 + 思考题</b>选一件你"以前喜欢、最近放弃了"的小活动，这周做一次，做前做后各给情绪打 1–10 分。<br>思考题：你平时是"等有动力才行动"，还是"用行动带出动力"？哪种在你身上更管用？
+</div>
+</div>
+
+<!-- 概念 3: PHQ-9 / GAD-7 -->
+<div class="card">
+<h2>把"不太好"变成数字：PHQ-9 / GAD-7<span class="en">Self-Screening Scales</span></h2>
+<span class="tag">测量心理学 · 自评</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>PHQ-9（测抑郁，9 题）和 GAD-7（测焦虑，7 题）是两个免费、两分钟、经大量验证的自评量表，也是全球初级保健的<strong>标准筛查工具</strong>。它们不是诊断，但能把模糊的"我最近不太好"变成可追踪的数字——看见自己在谱系上的位置与趋势。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>量表的价值在于<strong>把主观感受外化、可追踪</strong>——趋势比单次分数更重要。PHQ-9 第 9 题专门筛查"自伤或轻生念头"，是临床上最受重视的一项。而抑郁和焦虑共享一台维持引擎：<strong>反刍</strong>（rumination）。Susan Nolen-Hoeksema 的研究表明，反复咀嚼"我怎么这么糟"并不解决问题，只会加深抑郁、延长焦虑。</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">PHQ-9 分数 → 严重程度（GAD-7 区间类似，略低）</div>
+<div class="bar-row"><div class="bar-label">0–4 最小</div><div class="bar-track"><div class="bar-fill" style="width:18%;background:#9ac49a">观察</div></div></div>
+<div class="bar-row"><div class="bar-label">5–9 轻度</div><div class="bar-track"><div class="bar-fill" style="width:37%;background:#c4b85a">自助+监测</div></div></div>
+<div class="bar-row"><div class="bar-label">10–14 中度</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:#c8924a">考虑治疗</div></div></div>
+<div class="bar-row"><div class="bar-label">15–27 中重</div><div class="bar-track"><div class="bar-fill" style="width:85%;background:#c84a4a">建议就医</div></div></div>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>每两周做一次 PHQ-9 / GAD-7，记下分数。<b>趋势</b>（在升还是在降）比单次绝对值更有信息量。</div>
+<div class="role-item"><b>育儿</b>青少年有专门的 PHQ-A 版本。但量表是开启对话的钩子，不是评判孩子的工具。</div>
+<div class="role-item"><b>团队 / leader</b>千万别拿来给团队"测一测"——这是高度私人的健康信息，组织收集既越界又有法律风险。</div>
+<div class="role-item"><b>关系</b>和伴侣一起做、彼此分享，把"我最近状态"从抽象抱怨变成具体可谈的话题。</div>
+</div>
+</div>
+
+<div class="callout">
+<b>跨学科连接（紧密）：</b>反刍在神经科学上对应<strong>默认模式网络</strong>（DMN）的过度活跃——大脑"自我指涉、走神"的回路停不下来。Judson Brewer 的研究显示，<strong>正念冥想能降低 DMN 活动</strong>。这正是禅修传统所说"止息念头之流"的现代神经对应：反刍 ↔ DMN 过载 ↔ 正念/禅定的解药。
+</div>
+
+<div class="section">
+<span class="label">自我评估工具</span>
+<a class="tool-link" href="https://www.mdcalc.com/calc/1725/phq9-patient-health-questionnaire-9" target="_blank">PHQ-9（MDCalc）</a>
+<a class="tool-link" href="https://www.mdcalc.com/calc/1727/gad7-general-anxiety-disorder-7" target="_blank">GAD-7（MDCalc）</a>
+<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">均为学术验证版本，免费可做。结果仅供自我了解，不构成诊断。</p>
+</div>
+
+<div class="misq">
+<b>常见误区：</b>把量表分数当"诊断书"。它只是筛查——高分意味着"值得去找专业人士做正式评估"，不等于已经"确诊"或"病了"。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · Kroenke & Spitzer《The PHQ-9》(2001, J Gen Intern Med) · Spitzer et al.《GAD-7》(2006, Arch Intern Med) · Nolen-Hoeksema《Rethinking Rumination》(2008)
+</div>
+
+<div class="eng">
+<b>English Insight：</b>"What gets measured gets managed." 能被测量的，才更可能被照顾——量表把无形的状态变成可追踪的曲线。
+</div>
+
+<div class="practice">
+<b>本周练习 + 思考题</b>做一次 PHQ-9 和 GAD-7，把分数和日期记在备忘录里，作为日后的基线。<br>思考题：当你陷入反刍时，是在"分析问题"还是在"反复重播痛苦"？你能分辨这两者吗？
+</div>
+</div>
+
+<!-- 概念 4: 何时见专业人士 -->
+<div class="card">
+<h2>自助的边界：何时该见专业人士<span class="en">When to Seek Professional Help</span></h2>
+<span class="tag">临床心理学 · 求助</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>自助真有证据（运动、行为激活、CBT 自助书都管用），但有明确边界。出现以下任一情况，就该找专业人士，而非继续自己扛：<strong>症状超过两周且影响功能 / 出现自伤或轻生念头 / 已无法维持日常运作</strong>。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>为什么早干预重要？抑郁有"<strong>点燃效应</strong>"（kindling，Robert Post 提出）——发作次数越多，再次发作所需的诱因越小，复发阈值越低。每拖一次未治疗的中重度发作，都在让下一次更容易到来。"等它自己好"对中重度往往无效，反而错过了最该介入的窗口。</p>
+</div>
+
+<div class="crisis">
+<b>⚠ 危机资源：</b>如果你或身边的人有自伤、轻生念头，或处于紧急心理危机——在美国可<strong>拨打或发短信至 988</strong>（Suicide &amp; Crisis Lifeline，免费、保密、24 小时）。紧急情况请直接拨 911 或前往最近急诊。求助是力量，不是软弱。
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>给自己写一份"红线清单"：哪些信号一出现（如连续两周快感缺失、出现轻生念头）我就预约专业人士，不再自我说服"再等等"。</div>
+<div class="role-item"><b>关系</b>陪伴抑郁的人：在场、不评判、协助找资源——但<b>别当 ta 的治疗师</b>。你的角色是支持，不是治愈。</div>
+<div class="role-item"><b>育儿</b>孩子的警示信号：成绩骤降、退出原本喜欢的活动、睡眠/食欲剧变、谈及"消失"或自伤。出现就认真对待，立即寻求专业评估。</div>
+<div class="role-item"><b>团队</b>知道公司 EAP（员工援助计划）等资源在哪，需要时能为成员指路，比自己当顾问更负责。</div>
+</div>
+</div>
+
+<div class="misq">
+<b>常见误区：</b>"看心理医生 = 病得很重 / 很丢人"，以及"必须撑到崩溃才有资格求助"。事实相反：越早求助，干预越简单、复发越少。看心理咨询和看牙医一样，是常规的健康维护，不是失败的标志。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · 988 Suicide &amp; Crisis Lifeline（美国）· Robert Post《Kindling and sensitization》(1992, Am J Psychiatry) · NICE / APA 抑郁焦虑临床指南
+</div>
+
+<div class="eng">
+<b>English Insight：</b>"Asking for help is not giving up. It is refusing to give up." 求助不是放弃，而是拒绝放弃。
+</div>
+
+<div class="practice">
+<b>本周练习 + 思考题</b>提前查好一条求助路径——你的保险覆盖哪些咨询师、附近的心理诊所、或 EAP 入口，存进手机。危机时不必现找。<br>思考题：如果是你最好的朋友处在你现在的状态，你会劝 ta 去求助吗？那为什么对自己用了更高的门槛？
+</div>
+</div>
+
+<!-- 深入思考 -->
+<div class="card">
+<h2>深入思考<span class="en">Going Deeper</span></h2>
+
+<details><summary>抑郁的"快感缺失"和佛学的"贪嗔痴"是一回事吗？</summary>
+<div>不是。快感缺失是奖赏系统（多巴胺通路）下调的临床病理；佛学的烦恼是对普遍心识运作的描述，针对健康人如何超越执取。强行等同会既误读医学也误读佛法。但有真实交点：正念冥想（脱胎于止观）已被证据支持用于预防抑郁复发（MBCT），机制部分在于降低反刍与 DMN 过载。借用方法 ≠ 概念等同。</div></details>
+
+<details><summary>若"血清素失衡"证据薄弱，为什么 SSRI 还有效？</summary>
+<div>"药为什么有效"和"病因是什么"是两个独立问题。阿司匹林止头痛，不代表头痛源于缺阿司匹林。SSRI 可能通过促进神经可塑性、调节情绪回路等更复杂的下游机制起作用，而非简单"补血清素"。启示：有效治疗不必依赖一个简化的病因故事——也提醒我们对任何"一句话病因"保持警惕。</div></details>
+
+<details><summary>诊断标签（如"重度抑郁障碍"）是帮助还是伤害？</summary>
+<div>两面都有证据。好处：让人知道"这不是我的错，是可治疗的状态"，打开求助与报销通道，减少自责。代价：污名、固化自我认同（"我是个抑郁的人"），或把连续谱硬切成"有病/没病"。成熟的立场是把诊断当作<b>导航工具而非身份</b>——用它找方向，但不让它定义你是谁。</div></details>
+
+<details><summary>东亚文化里抑郁常以"身体症状"呈现，说明了什么？</summary>
+<div>Arthur Kleinman 在中国的研究发现，许多东亚患者更多报告失眠、疲惫、胃痛等躯体症状，而非"我很悲伤"。这可能反映文化如何塑造痛苦的表达语言，以及对心理污名的回避。启示：筛查和陪伴时别只问"你心情怎样"，也要留意持续的、查不出器质原因的身体不适——它可能是情绪的另一种说法。</div></details>
+
+<details><summary>对追求高效的人，"行为激活"会不会变成另一种自我鞭策？</summary>
+<div>有风险。行为激活的核心是用小而可完成的活动重建<b>愉悦感与掌控感</b>，不是 KPI。若做成"今天必须高产否则我没用"，就退回成了完美主义的自我攻击（见 Day 10）。健康版本是自我同情式的（见 Day 6）：行动是为了照顾自己，不是证明自己。区别在动机，不在动作。</div></details>
+
+</div>
+
+<nav class="back"><a href="index.html">← 返回 Psychology Daily 目录</a></nav>
+
+</div>
+</body></html>
