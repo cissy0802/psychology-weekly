@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology Day 27: A Map of Therapy Schools — Hundreds of Methods, Really Just Four Families</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.tool-link{display:inline-block;background:#e8d8e8;color:#7a3e8c;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
+.tool-link:hover{background:#d8b8d8}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.flow{margin-top:10px}
+.flow-row{display:flex;align-items:stretch;gap:10px;margin-bottom:10px}
+.flow-q{flex:0 0 38%;background:#7a3e8c;color:#fff;border-radius:10px;padding:12px 14px;font-size:0.86rem;display:flex;align-items:center;font-weight:600}
+.flow-a{flex:1;background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:12px 14px;font-size:0.86rem}
+.flow-a b{color:#7a3e8c}
+details{margin-top:12px;background:#fbf3fb;border-radius:10px;padding:4px 16px}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details > div{padding:0 0 14px;font-size:0.93rem;color:#4a3a4a}
+.deep{margin-top:28px}
+.deep h3{color:#7a3e8c;font-size:1.1rem;text-align:center;margin-bottom:6px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.flow-row{flex-direction:column}.flow-q{flex:auto}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">DAY 27 · CLINICAL & THERAPY</div>
+<h1>A Map of Therapy Schools: Hundreds of Methods, Really Just Four Families</h1>
+<div class="meta">2026.06.16 · BigCat's Inner World</div>
+<div class="intro">Psychodynamic, CBT, humanistic, EMDR, IFS, DBT, ACT… the names pile up like alphabet soup. But they really cluster around four levels of psychological suffering. More counterintuitive still: what determines outcome is often not the brand. This issue gives you a map, plus a framework for "which one to pick."</div>
+</header>
+
+<!-- Concept 1 -->
+<div class="card">
+<h2>The Four Families<span class="en">The Four Families of Psychotherapy</span></h2>
+<span class="tag">Clinical Psychology · The Big Map</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>There are <strong>400+ named therapies</strong> on the market, but the vast majority fall into four families, each anchored to a different <strong>level</strong> of psychological pain: thoughts, relational/unconscious patterns, the body, and meaning/growth. Turf wars between schools are often "arguments held on different floors" — they aren't addressing the same thing at all.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Basis</span>
+<p>History speaks of "three forces." The first is <b>psychoanalysis</b> (from Freud, but today's mainstream is the relational/object-relations schools of Kohut and Mitchell — long past id/ego). The second is <b>behavioral–cognitive</b> (Beck's CBT, Ellis's REBT). The third is <b>humanistic–experiential</b> (Rogers, Perls). The last 30 years grew a fourth strand: <b>trauma and body-oriented</b> approaches (driven by van der Kolk, including EMDR, Somatic Experiencing).</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The Four Families: Which Level Each Targets</div>
+<div class="matrix">
+<div class="matrix-cell"><b>Cognitive–Behavioral</b>Level: thoughts & behavior<br>Examples: CBT / DBT / ACT<br>Evidence: strongest (most RCTs)</div>
+<div class="matrix-cell"><b>Psychodynamic</b>Level: unconscious patterns & relationship<br>Examples: psychoanalysis / relational<br>Evidence: moderate; good for long-term character work</div>
+<div class="matrix-cell"><b>Humanistic–Experiential</b>Level: meaning, growth, emotion<br>Examples: person-centered / EFT / IFS<br>Evidence: moderate; strong on alliance & emotional processing</div>
+<div class="matrix-cell"><b>Trauma–Body</b>Level: body & nervous system<br>Examples: EMDR / Somatic<br>Evidence: EMDR fairly strong; SE still weak</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Think of it as <strong>different layers of a software stack</strong>: CBT changes the "application layer" — current automatic thoughts and behavior; psychodynamic changes the "operating system" — how early relationships shaped your default config for intimacy; body-oriented work changes the "firmware" — how trauma is lodged in the nervous system, out of reach of reasoning. No layer is inherently superior; it depends on which layer the problem is stuck in.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Not sure which type of therapy to seek? First ask: is my distress more like "thoughts/behavior," a "recurring relational script," or "tension in the body I can't put into words"? The answer points to a family.</div>
+<div class="role-item"><b>Parenting</b>Finding therapy for a child — don't be intimidated by jargon. Child issues often use play therapy or parent-child interaction therapy (PCIT); the mechanism differs from adults, so ask what it targets.</div>
+<div class="role-item"><b>Team</b>An organization's EAP/coaching is not therapy — it's an "application-layer" tool (handling current stress); deeper issues need referral to professional therapy.</div>
+<div class="role-item"><b>Relationship</b>Couple problems call first for "relational-level" therapy — Emotionally Focused Therapy (Sue Johnson) or the Gottman method — far more on-target than dragging one partner off to individual CBT.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> equating "psychoanalysis" with Freud's pressure-tank of the unconscious and the oral stage. Modern psychodynamic therapy has long shifted toward <b>relationship and attachment</b>; Freud's metapsychological structural model is basically history in the clinic, no longer taught as the mechanism.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Nancy McWilliams, <i>Psychoanalytic Diagnosis</i> · Aaron Beck, <i>Cognitive Therapy</i> · Carl Rogers, <i>On Becoming a Person</i> · van der Kolk, <i>The Body Keeps the Score</i>
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Write down, in one sentence, the one struggle you most want to work on, then tag it with a "level": thoughts / relationship / body / meaning. That single step already filters out most of the off-target schools.
+</div>
+</div>
+
+<!-- Concept 2 -->
+<div class="card">
+<h2>The Dodo Bird Verdict & Common Factors<span class="en">The Dodo Bird Verdict & Common Factors</span></h2>
+<span class="tag">Outcome Research · Counterintuitive</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>For decades, researchers have run head-to-head comparisons of different schools, and the result is strikingly consistent: <strong>most mainstream therapies produce roughly equivalent overall outcomes</strong>. This is nicknamed the "Dodo Bird Verdict," after the dodo in <i>Alice</i>: "Everybody has won, and all must have prizes." What drives outcome is mainly not the brand.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Bruce Wampold's meta-analyses show that "specific technique" differences between therapies explain only a small slice of outcome; what really works are the <strong>common factors</strong> — the most robust predictor being the <strong>therapeutic alliance</strong> (trust and goal consensus between you and your therapist), followed by the client's hope, engagement, and a coherent "explanation + a set of things to do." In other words: <b>the relationship is the vehicle; technique is one of the tools inside it</b>. This is isomorphic with Day 11's Gottman conclusion — lasting change happens inside a safe relationship, not from the right script.</p>
+</div>
+
+<div class="callout">
+<b>Don't swing to the other extreme:</b> the Dodo verdict ≠ technique doesn't matter. For <b>specific problems</b>, specific techniques are clearly superior: exposure therapy for phobias/OCD, trauma-focused therapy for PTSD — these are "the right medicine for the ailment" and can't be replaced by generic supportive talk. Common factors are the foundation; on-target technique is the bonus.
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>When choosing a therapist, "does this person make me feel safe and understood?" deserves more weight than their school label. No sense of alliance after the first 2–3 sessions? Switching is fine — it's not failure.</div>
+<div class="role-item"><b>Relationship</b>Transfer common factors into daily life: making the other person feel heard, with shared goals — this repairs a relationship more than how many communication techniques you've mastered.</div>
+<div class="role-item"><b>Team</b>1:1 coaching parallels this: a report's growth comes more from "a trusted relationship + clear goals" than from which management book's model you applied; however good the technique, if the relationship breaks, it fails.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tool</span>
+<p style="font-size:0.93rem">After 3–4 sessions, run an "alliance check," scoring each 1–5: ① Do I feel understood by this therapist? ② Do we agree on "what we're solving"? ③ Do I believe their method will help me? ④ After sessions, do I usually feel clearer, or more confused? Low total, or a persistently low ① → seriously consider switching.</p>
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> "Once I find the right method / a genius therapist, the problem will be cured." Change comes mainly from <b>your sustained engagement inside a safe relationship</b>; the therapist is a collaborator, not a repairman.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Bruce Wampold, <i>The Great Psychotherapy Debate</i> · Saul Rosenzweig 1936 (origin of the Dodo concept) · Norcross (ed.), <i>Psychotherapy Relationships That Work</i>
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "The relationship is the most robust predictor of outcome." — Bruce Wampold. The turf war is overrated; the relationship is chronically underrated.
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Recall a relationship that genuinely helped you (not only therapy: a teacher, friend, boss). Which common factors did it satisfy — being understood, shared goals, a credible direction? Make those a checklist for choosing people going forward, and for how you help others.
+</div>
+</div>
+
+<!-- Concept 3 -->
+<div class="card">
+<h2>Third-Wave CBT & the New Trauma Strand<span class="en">Third-Wave CBT & Trauma-Focused Therapies</span></h2>
+<span class="tag">Modern Evolution · Interdisciplinary</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Classic CBT teaches you to "challenge and change irrational thoughts." The "<strong>third wave</strong>" pivots: rather than necessarily changing the thought, change your <strong>relationship to the thought</strong> — let it exist without being led around by it. This turn formally invited Eastern meditation into evidence-based psychology.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Three exemplars: <b>DBT</b> (Dialectical Behavior Therapy, Linehan) — designed for severe emotion dysregulation and borderline personality; its core is the dialectic of "acceptance and change," with four skill modules: mindfulness, distress tolerance, emotion regulation, interpersonal effectiveness. <b>ACT</b> (Acceptance and Commitment Therapy, Hayes) — core is "cognitive defusion" + acting toward values. <b>MBCT</b> (Mindfulness-Based Cognitive Therapy) — applies mindfulness training to prevent depressive relapse, with solid evidence. Trauma branches off separately: <b>EMDR</b>, <b>IFS</b> (see Day 5), and somatic approaches bypass "reasoning it out" and work directly on trauma activation in the body.</p>
+</div>
+
+<div class="callout">
+<b>Interdisciplinary · a genuine echo of Buddhism:</b> this is not a forced analogy. The mindfulness modules of MBCT and DBT derive directly from <b>vipassana (insight meditation)</b>; ACT's "cognitive defusion" is operationally close to the Buddhist practice of "observing" — not identifying with a thought, just watching it arise and pass. Kabat-Zinn's MBSR is itself the product of secularizing and validating meditation. The "watching the mind" the East cultivated for two millennia has been rediscovered by modern clinics — and measured to work.
+</div>
+
+<div class="misq">
+<b>Misconception & honest controversy:</b> EMDR does work (fairly strong evidence for PTSD), but its signature "eye movements" mechanism is heavily disputed — most researchers think <b>what works is the structured exposure and reprocessing; the eye movements may not be the key ingredient</b>. Somatic Experiencing is clinically popular, but high-quality RCTs remain scarce; its evidence is weaker than the CBT family. Liking a method is fine, but distinguish "some people benefit" from "solid evidence."
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Try an ACT defusion: swap "I screwed up" for "I <b>notice</b> I'm having the thought that I screwed up." One phrase apart, and you've opened observing space between yourself and the thought.</div>
+<div class="role-item"><b>Self</b>When emotionally flooded, use DBT's TIPP (cold water on the face, intense exercise) to lower physiological arousal first, then reason — if the body hasn't cooled down, cognitive techniques won't take.</div>
+</div>
+</div>
+
+<div class="refs">
+<b>Key references</b> · Marsha Linehan, <i>DBT Skills Training Manual</i> · Steven Hayes, <i>Get Out of Your Mind and Into Your Life</i> · Segal/Williams/Teasdale, <i>MBCT</i> · Jon Kabat-Zinn, <i>Full Catastrophe Living</i>
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Pick a negative thought that's been clinging to you this week and, for three straight days, restate it as "I notice I'm having the thought that ___." Record: before vs. after restating, did the thought's pull on your emotion change? This is the minimum viable experiment for cognitive defusion.
+</div>
+</div>
+
+<!-- Concept 4 -->
+<div class="card">
+<h2>How to Choose: Translate the Problem into a Modality<span class="en">Matching: Translate the Problem into a Modality</span></h2>
+<span class="tag">Decision Framework · Practical</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Don't ask "which school is best" — there's no standard answer. Ask "<strong>which level is my problem on</strong>." The problem's level sets the priority of schools; and above any school, the therapist as a person and the quality of the alliance are the final deciding factor.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">From Problem to Modality: An On-Target Map</div>
+<div class="flow">
+<div class="flow-row"><div class="flow-q">Acute symptoms: panic, OCD, specific phobia, insomnia</div><div class="flow-a"><b>First choice CBT</b> / exposure therapy; panic and OCD have highly structured, evidence-based protocols that work relatively fast.</div></div>
+<div class="flow-row"><div class="flow-q">Trauma, flashbacks, body-stuck reactions</div><div class="flow-a"><b>EMDR / trauma-focused CBT / IFS</b>; needs a specially trained trauma therapist — don't force a raw talk-through unprepared.</div></div>
+<div class="flow-row"><div class="flow-q">Recurring relational scripts, an emptiness you can't name</div><div class="flow-a"><b>Psychodynamic / IFS / longer-term therapy</b>; works on early patterns — slower pace, but reaches the roots.</div></div>
+<div class="flow-row"><div class="flow-q">Severe emotion dysregulation, self-harm, borderline traits</div><div class="flow-a"><b>DBT</b>; currently the strongest evidence-based on-target option.</div></div>
+<div class="flow-row"><div class="flow-q">Stuck on meaning, values, life direction</div><div class="flow-a"><b>Existential–humanistic / ACT</b>; doesn't treat a "disease" — accompanies you in realigning direction.</div></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>This table is a <strong>starting point, not an endpoint</strong>. In reality most good therapy is <strong>integrative</strong> — a therapist has a primary orientation but borrows flexibly as you need. Moderate-to-severe depression/anxiety often does best with <strong>medication + psychotherapy</strong> combined; don't pit the two against each other. When the picture is unclear, start with an assessment session to locate the level.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>At the first visit, ask openly: "What orientation are you mainly trained in? How do you usually work with issues like mine? Roughly how long might it take?" A professional welcomes these; be wary of vagueness or promises of a "quick cure."</div>
+<div class="role-item"><b>Relationship</b>Finding therapy for a family member — bring a one-pager of "symptom list + how long + which functions it affects." It helps matching far more than an emotional description.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tool</span>
+<a class="tool-link" href="https://www.psychologytoday.com/us/therapists" target="_blank">Psychology Today — Find a Therapist</a>
+<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">Filter by orientation, issue, and insurance (mostly North America). Day 28 will cover the licensing system and matching process.</p>
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> "Switching therapists = something's wrong with me / the last one failed." Matching inherently takes trial. After the first few sessions with no sense of alliance, an unclear direction, or being labeled — switching is a rational decision, not your failure.
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Take the struggle you wrote in the first practice and walk it through the "on-target map," circling 1–2 priority modalities. Even if you don't plan to seek treatment yet, note it down — it's your navigation anchor for when you do.
+</div>
+</div>
+
+<!-- Deep -->
+<div class="deep">
+<h3>Deeper Reflection</h3>
+
+<details><summary>1. If the "Dodo Bird Verdict" holds — most therapies produce similar outcomes — then where lies the point of psychotherapy's hundreds of schools?</summary>
+<div>The value of schools may lie not in "who works better" but in offering different <b>explanatory languages</b> and <b>credible rituals</b>. A client needs a coherent framework to make sense of their pain, and different people are moved by different languages: some need a checklist of "cognitive distortions," others the metaphor of an "inner child." From this angle, the diversity of schools is a function of "fitting diverse people," not redundancy. But it also warns us: beware of taking any single school as the one truth.</div></details>
+
+<details><summary>2. Third-wave CBT has put Buddhist mindfulness on an evidence base — is this a triumph of Eastern wisdom, or a "decontextualized appropriation"?</summary>
+<div>Both readings have merit. On one hand, mindfulness is stripped of its ethical and soteriological whole and reduced to a technique for "lowering relapse rates" — the "why practice" of the original context is hollowed out. On the other, putting it on an evidence base lets a two-thousand-year practice of observing the mind reach people who never enter a temple, with falsifiable outcome data for the first time. Worth asking: when "mindfulness" is only attention training, no longer pointing toward "no-self" and the end of suffering, is it still the same thing? Is there tension between clinical benefit and traditional integrity?</div></details>
+
+<details><summary>3. "The relationship is the strongest predictor of outcome" — does this conclusion hold equally across cultures?</summary>
+<div>Common-factors research is mostly based on Western (WEIRD) samples. In collectivist cultures, help-seekers may expect the therapist as an <b>authoritative expert</b> giving clear guidance, rather than an egalitarian collaborative alliance; the concrete form of "alliance," comfort with self-disclosure, and the tendency to somatize psychological distress may all differ. This doesn't negate the importance of the relationship, but it suggests what a "good relationship" looks like may vary by culture — an on-target cross-cultural therapy must first understand what "being helped" means within the client's culture.</div></details>
+
+<details><summary>4. As someone pursuing the "AI super-individual," how would you view AI mental-support tools in relation to this map?</summary>
+<div>AI is most likely to fill in at the "application layer": CBT-style thought records, mood tracking, psychoeducation, 24/7 availability — the structured, low-risk parts. But common-factors research points squarely at AI's current soft spot: a real therapeutic alliance, the experience of being fully understood by a human who can be hurt, the embodied sense of safety needed in trauma reprocessing. The more worthwhile question may not be "can AI replace therapists" but "how can human-AI collaboration play to each side's strengths" — AI handling scalable practice and monitoring, humans guarding the relational core that can't be outsourced.</div></details>
+
+</div>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Daily Index</a></nav>
+
+</div>
+</body></html>
